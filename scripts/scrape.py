@@ -6,6 +6,7 @@ Fetches notable/rare bird observations from the past 7 days.
 
 import json
 import os
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -18,6 +19,61 @@ DAYS_BACK = 7
 
 # eBird API endpoint for notable observations
 BASE_URL = "https://api.ebird.org/v2"
+WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
+
+
+def clean_bird_name(name):
+    """Clean bird name for Wikipedia search."""
+    import re
+    # Remove subspecies/group designations in parentheses
+    name = re.sub(r'\s*\([^)]*\)\s*', ' ', name).strip()
+    # Remove "x" hybrid designations
+    if ' x ' in name:
+        name = name.split(' x ')[0].strip()
+    return name
+
+
+def fetch_bird_image(bird_name):
+    """Fetch bird image URL from Wikipedia."""
+    headers = {
+        "User-Agent": "RareBirdsNY/1.0 (https://github.com/wongpeiting/ebird-ny-rare-birds)"
+    }
+
+    try:
+        # Clean the bird name first
+        clean_name = clean_bird_name(bird_name)
+
+        # Search for the bird on Wikipedia
+        params = {
+            "action": "query",
+            "titles": clean_name,
+            "prop": "pageimages",
+            "format": "json",
+            "pithumbsize": 400,
+            "redirects": 1,
+        }
+        response = requests.get(WIKIPEDIA_API, params=params, headers=headers, timeout=5)
+        data = response.json()
+
+        pages = data.get("query", {}).get("pages", {})
+        for page in pages.values():
+            if "thumbnail" in page:
+                return page["thumbnail"]["source"]
+
+        # Try with " (bird)" suffix if not found
+        params["titles"] = f"{clean_name} (bird)"
+        response = requests.get(WIKIPEDIA_API, params=params, headers=headers, timeout=5)
+        data = response.json()
+
+        pages = data.get("query", {}).get("pages", {})
+        for page in pages.values():
+            if "thumbnail" in page:
+                return page["thumbnail"]["source"]
+
+    except Exception:
+        pass
+
+    return None
 
 
 def fetch_notable_observations():
@@ -70,15 +126,21 @@ def process_observations(observations):
             "userDisplayName": obs.get("userDisplayName", "Anonymous"),
         })
 
-    # Sort species by name and observations by date (newest first)
-    result = sorted(species_data.values(), key=lambda x: x["comName"])
-    for species in result:
+    # Calculate observation counts and sort by rarity (fewest observations = rarest)
+    for species in species_data.values():
         species["observations"] = sorted(
             species["observations"],
             key=lambda x: x["obsDt"],
             reverse=True
         )
         species["totalObservations"] = len(species["observations"])
+
+    # Sort by rarity: fewer observations = rarer = higher rank
+    result = sorted(species_data.values(), key=lambda x: (x["totalObservations"], x["comName"]))
+
+    # Add rarity rank
+    for i, species in enumerate(result):
+        species["rarityRank"] = i + 1
 
     return result
 
@@ -93,6 +155,17 @@ def main():
         processed_data = process_observations(raw_observations)
         total_obs = sum(s["totalObservations"] for s in processed_data)
         print(f"Found {len(processed_data)} unique species with {total_obs} unique observations")
+
+        # Fetch images for top 30 rarest birds
+        print("Fetching bird images from Wikipedia...")
+        for i, species in enumerate(processed_data[:30]):
+            img_url = fetch_bird_image(species["comName"])
+            species["imageUrl"] = img_url
+            if img_url:
+                print(f"  [{i+1}] {species['comName']}: found image")
+            else:
+                print(f"  [{i+1}] {species['comName']}: no image")
+            time.sleep(0.1)  # Be nice to Wikipedia API
 
         output = {
             "lastUpdated": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),

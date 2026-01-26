@@ -12,160 +12,386 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            font-family: 'Courier New', monospace;
+            background: #0a0a0f;
             min-height: 100vh;
             color: #e0e0e0;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 2rem;
         }
 
         header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
+            padding: 2rem 0;
+            border-bottom: 2px dashed #333;
         }
 
         h1 {
             font-size: 2.5rem;
             color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
             margin-bottom: 0.5rem;
+            text-shadow: 4px 4px 0 #ff6b6b, -2px -2px 0 #4ecdc4;
         }
 
         .subtitle {
-            color: #8892b0;
-            font-size: 1.1rem;
+            color: #888;
+            font-size: 1rem;
+            letter-spacing: 2px;
         }
 
         .stats {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 3rem;
             margin: 2rem 0;
-            flex-wrap: wrap;
         }
 
-        .stat-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 1.5rem 2rem;
+        .stat {
             text-align: center;
-            min-width: 150px;
         }
 
         .stat-number {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            color: #64ffda;
+            color: #4ecdc4;
+            text-shadow: 2px 2px 0 #1a1a2e;
         }
 
         .stat-label {
-            color: #8892b0;
-            font-size: 0.9rem;
-            margin-top: 0.25rem;
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .last-updated {
             text-align: center;
-            color: #8892b0;
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-        }
-
-        .species-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .species-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            padding: 1.5rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .species-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            border-color: rgba(100, 255, 218, 0.3);
-        }
-
-        .species-header {
-            margin-bottom: 1rem;
-        }
-
-        .species-name {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 0.25rem;
-        }
-
-        .species-scientific {
-            font-style: italic;
-            color: #8892b0;
-            font-size: 0.9rem;
-        }
-
-        .observation-count {
-            display: inline-block;
-            background: rgba(100, 255, 218, 0.15);
-            color: #64ffda;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
+            color: #555;
             font-size: 0.8rem;
-            margin-top: 0.5rem;
+            margin-bottom: 3rem;
         }
 
-        .observations-list {
-            margin-top: 1rem;
-            max-height: 200px;
-            overflow-y: auto;
+        /* Hero Section - Rarest Bird */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            border: 3px solid #4ecdc4;
+            border-radius: 0;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
         }
 
-        .observation {
-            padding: 0.75rem;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            margin-bottom: 0.5rem;
+        .hero::before {
+            content: '#1 RAREST';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #ff6b6b;
+            color: #000;
+            padding: 0.5rem 1.5rem;
+            font-weight: bold;
             font-size: 0.9rem;
+            letter-spacing: 2px;
         }
 
-        .observation:last-child {
-            margin-bottom: 0;
+        .hero-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            align-items: center;
         }
 
-        .obs-location {
+        .hero-image-container {
+            position: relative;
+        }
+
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            image-rendering: pixelated;
+            filter: contrast(1.1) saturate(0.8);
+            border: 4px solid #4ecdc4;
+            background: #1a1a2e;
+        }
+
+        .pixel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 3px,
+                    rgba(0, 0, 0, 0.1) 3px,
+                    rgba(0, 0, 0, 0.1) 6px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 3px,
+                    rgba(0, 0, 0, 0.1) 3px,
+                    rgba(0, 0, 0, 0.1) 6px
+                );
+            pointer-events: none;
+        }
+
+        .no-image {
+            width: 100%;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #1a1a2e, #2a2a4e);
+            border: 4px solid #4ecdc4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .hero-info h2 {
+            font-size: 3rem;
             color: #fff;
-            font-weight: 500;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
-        .obs-details {
-            color: #8892b0;
-            font-size: 0.85rem;
+        .hero-info .scientific {
+            font-style: italic;
+            color: #4ecdc4;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-stat {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem 1.5rem;
+            border-left: 3px solid #ff6b6b;
+        }
+
+        .hero-stat-value {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .hero-stat-label {
+            font-size: 0.7rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-sighting {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-left: 3px solid #4ecdc4;
+        }
+
+        .hero-sighting-label {
+            font-size: 0.7rem;
+            color: #4ecdc4;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-sighting-location {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        .hero-sighting-details {
+            color: #888;
+            font-size: 0.9rem;
             margin-top: 0.25rem;
         }
 
-        .obs-link {
-            color: #64ffda;
-            text-decoration: none;
-            font-size: 0.8rem;
+        /* Runner Up Section */
+        .runners-up {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
         }
 
-        .obs-link:hover {
-            text-decoration: underline;
+        .runner-card {
+            background: #12121a;
+            border: 2px solid #222;
+            padding: 0;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .runner-card:hover {
+            border-color: #4ecdc4;
+            transform: translateY(-2px);
+        }
+
+        .runner-card.rank-2 { border-color: #c0c0c0; }
+        .runner-card.rank-3 { border-color: #cd7f32; }
+
+        .rank-badge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #333;
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        .rank-2 .rank-badge { background: #c0c0c0; color: #000; }
+        .rank-3 .rank-badge { background: #cd7f32; color: #000; }
+
+        .runner-image {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            image-rendering: pixelated;
+            filter: contrast(1.05) saturate(0.85);
+            background: #1a1a2e;
+        }
+
+        .runner-image-placeholder {
+            width: 100%;
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, #1a1a2e, #2a2a4e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .runner-info {
+            padding: 1rem;
+        }
+
+        .runner-name {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .runner-scientific {
+            font-style: italic;
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .runner-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .obs-count {
+            color: #4ecdc4;
+        }
+
+        /* Rest of Birds */
+        .section-title {
+            font-size: 1.2rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px dashed #333;
+        }
+
+        .bird-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .bird-item {
+            background: #0f0f15;
+            border: 1px solid #1a1a25;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 60px 1fr auto;
+            gap: 1rem;
+            align-items: center;
+            transition: border-color 0.2s;
+        }
+
+        .bird-item:hover {
+            border-color: #333;
+        }
+
+        .bird-rank {
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .bird-thumb {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            image-rendering: pixelated;
+            filter: contrast(1.05) saturate(0.8);
+            border: 2px solid #222;
+        }
+
+        .bird-thumb-placeholder {
+            width: 50px;
+            height: 50px;
+            background: #1a1a2e;
+            border: 2px solid #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .bird-info-compact h3 {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-bottom: 0.2rem;
+        }
+
+        .bird-info-compact .scientific {
+            font-size: 0.75rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .bird-obs-count {
+            font-size: 1.2rem;
+            color: #4ecdc4;
+            font-weight: bold;
         }
 
         .loading {
             text-align: center;
             padding: 4rem;
-            color: #8892b0;
+            color: #555;
         }
 
         .error {
@@ -173,20 +399,20 @@
             padding: 2rem;
             color: #ff6b6b;
             background: rgba(255, 107, 107, 0.1);
-            border-radius: 12px;
+            border: 2px solid #ff6b6b;
         }
 
         footer {
             text-align: center;
             margin-top: 3rem;
             padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #8892b0;
-            font-size: 0.9rem;
+            border-top: 2px dashed #222;
+            color: #444;
+            font-size: 0.8rem;
         }
 
         footer a {
-            color: #64ffda;
+            color: #4ecdc4;
             text-decoration: none;
         }
 
@@ -194,24 +420,52 @@
             text-decoration: underline;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-image-container {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            .hero-info h2 {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 600px) {
             .container {
                 padding: 1rem;
             }
 
             h1 {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
 
             .stats {
-                gap: 1rem;
+                gap: 1.5rem;
             }
 
-            .stat-card {
-                padding: 1rem 1.5rem;
+            .stat-number {
+                font-size: 2rem;
             }
 
-            .species-grid {
+            .hero {
+                padding: 1.5rem;
+            }
+
+            .hero-info h2 {
+                font-size: 1.5rem;
+            }
+
+            .bird-list {
                 grid-template-columns: 1fr;
             }
         }
@@ -220,33 +474,123 @@
 <body>
     <div class="container">
         <header>
-            <h1>Rare Birds of New York</h1>
-            <p class="subtitle">Notable bird observations from the past 7 days</p>
+            <h1>Rare Birds of NY</h1>
+            <p class="subtitle">Notable sightings from the past 7 days</p>
         </header>
 
-        <div class="stats" id="stats">
-            <div class="stat-card">
+        <div class="stats">
+            <div class="stat">
                 <div class="stat-number" id="species-count">-</div>
                 <div class="stat-label">Rare Species</div>
             </div>
-            <div class="stat-card">
+            <div class="stat">
                 <div class="stat-number" id="observation-count">-</div>
-                <div class="stat-label">Observations</div>
+                <div class="stat-label">Sightings</div>
             </div>
         </div>
 
         <p class="last-updated" id="last-updated">Loading...</p>
 
         <div id="content">
-            <div class="loading">Loading bird data...</div>
+            <div class="loading">LOADING BIRD DATA...</div>
         </div>
 
         <footer>
-            <p>Data from <a href="https://ebird.org" target="_blank">eBird</a> | Updated daily via GitHub Actions</p>
+            <p>Data from <a href="https://ebird.org" target="_blank">eBird</a> | Auto-updated daily</p>
         </footer>
     </div>
 
     <script>
+        const BIRD_EMOJIS = ['🦅', '🦆', '🦉', '🦜', '🐦', '🦚', '🦩', '🦢', '🕊️', '🦃'];
+
+        function getRandomEmoji() {
+            return BIRD_EMOJIS[Math.floor(Math.random() * BIRD_EMOJIS.length)];
+        }
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
+
+        function renderHero(bird) {
+            const latestObs = bird.observations[0];
+            const imgHtml = bird.imageUrl
+                ? `<img src="${bird.imageUrl}" alt="${bird.comName}" class="hero-image"><div class="pixel-overlay"></div>`
+                : `<div class="no-image">${getRandomEmoji()}</div>`;
+
+            return `
+                <section class="hero">
+                    <div class="hero-content">
+                        <div class="hero-image-container">
+                            ${imgHtml}
+                        </div>
+                        <div class="hero-info">
+                            <h2>${bird.comName}</h2>
+                            <p class="scientific">${bird.sciName}</p>
+                            <div class="hero-stats">
+                                <div class="hero-stat">
+                                    <div class="hero-stat-value">${bird.totalObservations}</div>
+                                    <div class="hero-stat-label">Sightings this week</div>
+                                </div>
+                                <div class="hero-stat">
+                                    <div class="hero-stat-value">#1</div>
+                                    <div class="hero-stat-label">Rarity Rank</div>
+                                </div>
+                            </div>
+                            <div class="hero-sighting">
+                                <div class="hero-sighting-label">Latest Sighting</div>
+                                <div class="hero-sighting-location">${latestObs.locName}</div>
+                                <div class="hero-sighting-details">
+                                    ${formatDate(latestObs.obsDt)} · ${latestObs.howMany || 1} bird${(latestObs.howMany || 1) > 1 ? 's' : ''} · by ${latestObs.userDisplayName}
+                                    ${latestObs.subId ? ` · <a href="https://ebird.org/checklist/${latestObs.subId}" target="_blank" style="color: #4ecdc4;">View checklist</a>` : ''}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            `;
+        }
+
+        function renderRunnerCard(bird, rank) {
+            const rankClass = rank <= 3 ? `rank-${rank}` : '';
+            const imgHtml = bird.imageUrl
+                ? `<img src="${bird.imageUrl}" alt="${bird.comName}" class="runner-image">`
+                : `<div class="runner-image-placeholder">${getRandomEmoji()}</div>`;
+
+            return `
+                <div class="runner-card ${rankClass}">
+                    <div class="rank-badge">#${rank}</div>
+                    ${imgHtml}
+                    <div class="runner-info">
+                        <div class="runner-name">${bird.comName}</div>
+                        <div class="runner-scientific">${bird.sciName}</div>
+                        <div class="runner-meta">
+                            <span class="obs-count">${bird.totalObservations} sighting${bird.totalObservations > 1 ? 's' : ''}</span>
+                            <span>${formatDate(bird.observations[0].obsDt)}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderBirdItem(bird) {
+            const imgHtml = bird.imageUrl
+                ? `<img src="${bird.imageUrl}" alt="${bird.comName}" class="bird-thumb">`
+                : `<div class="bird-thumb-placeholder">${getRandomEmoji()}</div>`;
+
+            return `
+                <div class="bird-item">
+                    <div class="bird-rank">#${bird.rarityRank}</div>
+                    ${imgHtml}
+                    <div class="bird-info-compact">
+                        <h3>${bird.comName}</h3>
+                        <div class="scientific">${bird.sciName}</div>
+                    </div>
+                    <div class="bird-obs-count">${bird.totalObservations}</div>
+                </div>
+            `;
+        }
+
         async function loadBirdData() {
             const contentEl = document.getElementById('content');
             const speciesCountEl = document.getElementById('species-count');
@@ -259,77 +603,55 @@
 
                 const data = await response.json();
 
-                // Update stats
                 speciesCountEl.textContent = data.totalSpecies;
                 observationCountEl.textContent = data.totalObservations;
 
-                // Format last updated
                 const updated = new Date(data.lastUpdated);
                 lastUpdatedEl.textContent = `Last updated: ${updated.toLocaleDateString('en-US', {
                     weekday: 'long',
-                    year: 'numeric',
                     month: 'long',
                     day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit'
-                })} UTC`;
+                    year: 'numeric'
+                })} at ${updated.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })} UTC`;
 
-                // Render species cards
                 if (data.species.length === 0) {
                     contentEl.innerHTML = '<div class="loading">No rare bird observations in the past 7 days.</div>';
                     return;
                 }
 
-                const html = data.species.map(species => {
-                    const observations = species.observations.slice(0, 5).map(obs => {
-                        const date = new Date(obs.obsDt);
-                        const dateStr = date.toLocaleDateString('en-US', {
-                            month: 'short',
-                            day: 'numeric'
-                        });
-                        const count = obs.howMany > 1 ? `${obs.howMany} birds` : '1 bird';
-                        const checklistLink = obs.subId
-                            ? `<a href="https://ebird.org/checklist/${obs.subId}" target="_blank" class="obs-link">View checklist</a>`
-                            : '';
+                const [rarest, ...rest] = data.species;
+                const runners = rest.slice(0, 9);  // Next 9 rarest (ranks 2-10)
+                const others = rest.slice(9);       // Everyone else
 
-                        return `
-                            <div class="observation">
-                                <div class="obs-location">${obs.locName}</div>
-                                <div class="obs-details">
-                                    ${dateStr} &bull; ${count} &bull; ${obs.userDisplayName}
-                                    ${checklistLink ? ' &bull; ' + checklistLink : ''}
-                                </div>
-                            </div>
-                        `;
-                    }).join('');
+                let html = renderHero(rarest);
 
-                    const moreCount = species.observations.length - 5;
-                    const moreText = moreCount > 0 ? `<div class="observation" style="text-align: center; color: #8892b0;">+${moreCount} more observations</div>` : '';
-
-                    return `
-                        <div class="species-card">
-                            <div class="species-header">
-                                <div class="species-name">${species.comName}</div>
-                                <div class="species-scientific">${species.sciName}</div>
-                                <span class="observation-count">${species.totalObservations} observation${species.totalObservations > 1 ? 's' : ''}</span>
-                            </div>
-                            <div class="observations-list">
-                                ${observations}
-                                ${moreText}
-                            </div>
+                if (runners.length > 0) {
+                    html += `
+                        <h2 class="section-title">Top 10 Rarest</h2>
+                        <div class="runners-up">
+                            ${runners.map((bird, i) => renderRunnerCard(bird, i + 2)).join('')}
                         </div>
                     `;
-                }).join('');
+                }
 
-                contentEl.innerHTML = `<div class="species-grid">${html}</div>`;
+                if (others.length > 0) {
+                    html += `
+                        <h2 class="section-title">Other Notable Sightings</h2>
+                        <div class="bird-list">
+                            ${others.map(bird => renderBirdItem(bird)).join('')}
+                        </div>
+                    `;
+                }
+
+                contentEl.innerHTML = html;
 
             } catch (error) {
                 console.error('Error loading data:', error);
                 contentEl.innerHTML = `
                     <div class="error">
-                        <p>Unable to load bird data. The data file may not exist yet.</p>
+                        <p>UNABLE TO LOAD BIRD DATA</p>
                         <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-                            Run the scraper script to generate data, or wait for the next scheduled update.
+                            Run the scraper script or wait for the next scheduled update.
                         </p>
                     </div>
                 `;
