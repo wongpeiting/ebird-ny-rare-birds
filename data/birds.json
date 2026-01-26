@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-26T21:22:43.376882Z",
+  "lastUpdated": "2026-01-26T21:33:12.039995Z",
   "region": "New York",
   "regionCode": "US-NY",
   "daysBack": 7,
@@ -26,8 +26,8 @@
           "howMany": 1,
           "lat": 43.9436826,
           "lng": -74.0040098,
-          "subId": "S295637654",
-          "userDisplayName": "Stella M."
+          "subId": "S295660488",
+          "userDisplayName": "Catherine Parker"
         },
         {
           "locName": "Roosevelt Truck Trail, north section",
@@ -35,8 +35,8 @@
           "howMany": 1,
           "lat": 43.9436826,
           "lng": -74.0040098,
-          "subId": "S295660488",
-          "userDisplayName": "Catherine Parker"
+          "subId": "S295637654",
+          "userDisplayName": "Stella M."
         }
       ],
       "totalObservations": 3
@@ -113,8 +113,8 @@
           "howMany": 2,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         },
         {
           "locName": "Randalls Island",
@@ -122,8 +122,8 @@
           "howMany": 2,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         }
       ],
       "totalObservations": 4
@@ -192,15 +192,6 @@
           "howMany": 1,
           "lat": 40.6392421,
           "lng": -73.8730258,
-          "subId": "S295572373",
-          "userDisplayName": "E R"
-        },
-        {
-          "locName": "Shirley Chisholm SP (Pennsylvania Ave. Landfill)",
-          "obsDt": "2026-01-21 12:57",
-          "howMany": 1,
-          "lat": 40.6392421,
-          "lng": -73.8730258,
           "subId": "S295567793",
           "userDisplayName": "MCHL ____"
         },
@@ -212,6 +203,15 @@
           "lng": -73.8730258,
           "subId": "S295567792",
           "userDisplayName": "Casey Ferio"
+        },
+        {
+          "locName": "Shirley Chisholm SP (Pennsylvania Ave. Landfill)",
+          "obsDt": "2026-01-21 12:57",
+          "howMany": 1,
+          "lat": 40.6392421,
+          "lng": -73.8730258,
+          "subId": "S295572373",
+          "userDisplayName": "E R"
         }
       ],
       "totalObservations": 7
@@ -254,8 +254,8 @@
           "howMany": 1,
           "lat": 41.2265384,
           "lng": -73.8558,
-          "subId": "S296306525",
-          "userDisplayName": "Patrick Harty"
+          "subId": "S296444512",
+          "userDisplayName": "Sharon Weiss"
         },
         {
           "locName": "Croton Gorge Park--Croton Dam Overlook",
@@ -263,8 +263,8 @@
           "howMany": 1,
           "lat": 41.2265384,
           "lng": -73.8558,
-          "subId": "S296444512",
-          "userDisplayName": "Sharon Weiss"
+          "subId": "S295980634",
+          "userDisplayName": "Anne Swaim"
         },
         {
           "locName": "Croton Gorge Park--Croton Dam Overlook",
@@ -281,8 +281,8 @@
           "howMany": 1,
           "lat": 41.2265384,
           "lng": -73.8558,
-          "subId": "S295980634",
-          "userDisplayName": "Anne Swaim"
+          "subId": "S296306525",
+          "userDisplayName": "Patrick Harty"
         },
         {
           "locName": "Croton Gorge Park--Croton Dam Overlook",
@@ -565,8 +565,8 @@
           "howMany": 1,
           "lat": 40.7684842,
           "lng": -73.0212522,
-          "subId": "S295852142",
-          "userDisplayName": "Matthew Brown"
+          "subId": "S295852141",
+          "userDisplayName": "Mickey Scilingo"
         },
         {
           "locName": "Patchogue Lake",
@@ -574,8 +574,8 @@
           "howMany": 1,
           "lat": 40.7684842,
           "lng": -73.0212522,
-          "subId": "S295852141",
-          "userDisplayName": "Mickey Scilingo"
+          "subId": "S295852142",
+          "userDisplayName": "Matthew Brown"
         },
         {
           "locName": "Patchogue Lake",
@@ -800,15 +800,6 @@
           "userDisplayName": "Anonymous eBirder"
         },
         {
-          "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
-          "obsDt": "2026-01-24 11:10",
-          "howMany": 2,
-          "lat": 40.786003,
-          "lng": -73.96196,
-          "subId": "S296012560",
-          "userDisplayName": "Katharine Wodell"
-        },
-        {
           "locName": "Central Park",
           "obsDt": "2026-01-24 11:10",
           "howMany": 3,
@@ -816,6 +807,15 @@
           "lng": -73.9724819,
           "subId": "S296008757",
           "userDisplayName": "Lynne Hertzog"
+        },
+        {
+          "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
+          "obsDt": "2026-01-24 11:10",
+          "howMany": 2,
+          "lat": 40.786003,
+          "lng": -73.96196,
+          "subId": "S296012560",
+          "userDisplayName": "Katharine Wodell"
         },
         {
           "locName": "Buckhorn Island SP",
@@ -1052,15 +1052,6 @@
           "userDisplayName": "Curtis Higgins"
         },
         {
-          "locName": "Central Park--Great Lawn",
-          "obsDt": "2026-01-22 14:20",
-          "howMany": 3,
-          "lat": 40.7814351,
-          "lng": -73.9665967,
-          "subId": "S295699899",
-          "userDisplayName": "Zhi Zeng"
-        },
-        {
           "locName": "Central Park",
           "obsDt": "2026-01-22 14:20",
           "howMany": 3,
@@ -1068,6 +1059,15 @@
           "lng": -73.9724819,
           "subId": "S295699898",
           "userDisplayName": "Christine Gu"
+        },
+        {
+          "locName": "Central Park--Great Lawn",
+          "obsDt": "2026-01-22 14:20",
+          "howMany": 3,
+          "lat": 40.7814351,
+          "lng": -73.9665967,
+          "subId": "S295699899",
+          "userDisplayName": "Zhi Zeng"
         },
         {
           "locName": "Central Park--Great Lawn",
@@ -1828,8 +1828,8 @@
           "howMany": 1,
           "lat": 42.4647843,
           "lng": -76.5246248,
-          "subId": "S296045442",
-          "userDisplayName": "Jay McGowan"
+          "subId": "S296088241",
+          "userDisplayName": "Ryan Zucker"
         },
         {
           "locName": "Overlook, Rte. 89 N of Hog Hole",
@@ -1837,8 +1837,8 @@
           "howMany": 1,
           "lat": 42.4647843,
           "lng": -76.5246248,
-          "subId": "S296088241",
-          "userDisplayName": "Ryan Zucker"
+          "subId": "S296045442",
+          "userDisplayName": "Jay McGowan"
         },
         {
           "locName": "Lighthouse Point Natural Area (Jetty Woods)",
@@ -2014,8 +2014,8 @@
           "howMany": 1,
           "lat": 40.6680222,
           "lng": -73.96367,
-          "subId": "S296244000",
-          "userDisplayName": "Tina Alleva"
+          "subId": "S295850472",
+          "userDisplayName": "Indigo Goodson"
         },
         {
           "locName": "Brooklyn Botanic Garden",
@@ -2023,8 +2023,8 @@
           "howMany": 1,
           "lat": 40.6680222,
           "lng": -73.96367,
-          "subId": "S295850472",
-          "userDisplayName": "Indigo Goodson"
+          "subId": "S296244000",
+          "userDisplayName": "Tina Alleva"
         },
         {
           "locName": "Brooklyn Botanic Garden",
@@ -2220,8 +2220,8 @@
           "howMany": 1,
           "lat": 40.7069369,
           "lng": -73.1762438,
-          "subId": "S295840447",
-          "userDisplayName": "Carol Brand"
+          "subId": "S295809661",
+          "userDisplayName": "Lucille  Sanders"
         },
         {
           "locName": "Heckscher SP--Field 5",
@@ -2229,8 +2229,8 @@
           "howMany": 1,
           "lat": 40.7069369,
           "lng": -73.1762438,
-          "subId": "S295809661",
-          "userDisplayName": "Lucille  Sanders"
+          "subId": "S295840447",
+          "userDisplayName": "Carol Brand"
         },
         {
           "locName": "Heckscher SP--Field 5",
@@ -2335,8 +2335,8 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         },
         {
           "locName": "Randalls Island",
@@ -2344,8 +2344,8 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         }
       ],
       "totalObservations": 3
@@ -2634,15 +2634,6 @@
           "userDisplayName": "Diego Rodriguez"
         },
         {
-          "locName": "Central Park--Great Lawn",
-          "obsDt": "2026-01-22 14:20",
-          "howMany": 1,
-          "lat": 40.7814351,
-          "lng": -73.9665967,
-          "subId": "S295699899",
-          "userDisplayName": "Zhi Zeng"
-        },
-        {
           "locName": "Central Park",
           "obsDt": "2026-01-22 14:20",
           "howMany": 1,
@@ -2650,6 +2641,15 @@
           "lng": -73.9724819,
           "subId": "S295699898",
           "userDisplayName": "Christine Gu"
+        },
+        {
+          "locName": "Central Park--Great Lawn",
+          "obsDt": "2026-01-22 14:20",
+          "howMany": 1,
+          "lat": 40.7814351,
+          "lng": -73.9665967,
+          "subId": "S295699899",
+          "userDisplayName": "Zhi Zeng"
         },
         {
           "locName": "Central Park",
@@ -2675,8 +2675,8 @@
           "howMany": 1,
           "lat": 40.7715482,
           "lng": -73.9724819,
-          "subId": "S295661127",
-          "userDisplayName": "Mary Beth Kooper"
+          "subId": "S295630718",
+          "userDisplayName": "Hailey Clancy"
         },
         {
           "locName": "Central Park",
@@ -2684,8 +2684,8 @@
           "howMany": 1,
           "lat": 40.7715482,
           "lng": -73.9724819,
-          "subId": "S295630718",
-          "userDisplayName": "Hailey Clancy"
+          "subId": "S295661127",
+          "userDisplayName": "Mary Beth Kooper"
         },
         {
           "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
@@ -2923,8 +2923,8 @@
           "howMany": 4,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296060841",
-          "userDisplayName": "D K"
+          "subId": "S296060839",
+          "userDisplayName": "Ant Tab"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -2932,8 +2932,8 @@
           "howMany": 4,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296060839",
-          "userDisplayName": "Ant Tab"
+          "subId": "S296060841",
+          "userDisplayName": "D K"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -2986,8 +2986,8 @@
           "howMany": 5,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296042624",
-          "userDisplayName": "Casey Ferio"
+          "subId": "S296042629",
+          "userDisplayName": "chel sea"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -2995,8 +2995,8 @@
           "howMany": 5,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296042629",
-          "userDisplayName": "chel sea"
+          "subId": "S296042624",
+          "userDisplayName": "Casey Ferio"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -3022,6 +3022,15 @@
           "howMany": 5,
           "lat": 40.5923453,
           "lng": -73.8914328,
+          "subId": "S295690500",
+          "userDisplayName": "The Big Laskowski"
+        },
+        {
+          "locName": "Floyd Bennett Field",
+          "obsDt": "2026-01-22 12:20",
+          "howMany": 5,
+          "lat": 40.5923453,
+          "lng": -73.8914328,
           "subId": "S295677620",
           "userDisplayName": "Tom Preston"
         },
@@ -3033,15 +3042,6 @@
           "lng": -73.8914328,
           "subId": "S295690657",
           "userDisplayName": "karen o'hearn"
-        },
-        {
-          "locName": "Floyd Bennett Field",
-          "obsDt": "2026-01-22 12:20",
-          "howMany": 5,
-          "lat": 40.5923453,
-          "lng": -73.8914328,
-          "subId": "S295690500",
-          "userDisplayName": "The Big Laskowski"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -3058,8 +3058,8 @@
           "howMany": 4,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S295553855",
-          "userDisplayName": "Tom Preston"
+          "subId": "S295608459",
+          "userDisplayName": "Jo Ann Preston"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -3067,8 +3067,8 @@
           "howMany": 4,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S295608459",
-          "userDisplayName": "Jo Ann Preston"
+          "subId": "S295553855",
+          "userDisplayName": "Tom Preston"
         }
       ],
       "totalObservations": 18
@@ -3084,8 +3084,8 @@
           "howMany": 14,
           "lat": 40.6061334,
           "lng": -73.7788582,
-          "subId": "S296020685",
-          "userDisplayName": "Nelson Pascuzzi"
+          "subId": "S296018282",
+          "userDisplayName": "Benjamin D"
         },
         {
           "locName": "Edgemere Landfill (restricted access)",
@@ -3093,8 +3093,8 @@
           "howMany": 14,
           "lat": 40.6061334,
           "lng": -73.7788582,
-          "subId": "S296018282",
-          "userDisplayName": "Benjamin D"
+          "subId": "S296020685",
+          "userDisplayName": "Nelson Pascuzzi"
         },
         {
           "locName": "Edgemere Landfill (restricted access)",
@@ -3480,15 +3480,6 @@
           "userDisplayName": "Peter Harrity"
         },
         {
-          "locName": "Upstate Yard 8208 CR-20, Bainbridge US-NY 42.20498, -75.40111",
-          "obsDt": "2026-01-24 07:43",
-          "howMany": 8,
-          "lat": 42.204982,
-          "lng": -75.401113,
-          "subId": "S295971660",
-          "userDisplayName": "Jodi Brodsky"
-        },
-        {
           "locName": "2700 Centerline Road, Varysburg",
           "obsDt": "2026-01-24 07:43",
           "howMany": 9,
@@ -3496,6 +3487,15 @@
           "lng": -78.3020117,
           "subId": "S295948899",
           "userDisplayName": "Tom & Laura Somerville"
+        },
+        {
+          "locName": "Upstate Yard 8208 CR-20, Bainbridge US-NY 42.20498, -75.40111",
+          "obsDt": "2026-01-24 07:43",
+          "howMany": 8,
+          "lat": 42.204982,
+          "lng": -75.401113,
+          "subId": "S295971660",
+          "userDisplayName": "Jodi Brodsky"
         },
         {
           "locName": "Ed & Jackie's",
@@ -3762,8 +3762,8 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         },
         {
           "locName": "Randalls Island",
@@ -3771,8 +3771,8 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         }
       ],
       "totalObservations": 3
@@ -3954,8 +3954,8 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         },
         {
           "locName": "Randalls Island",
@@ -3963,8 +3963,8 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         },
         {
           "locName": "Governors Island (N.Y. County)",
@@ -4025,8 +4025,8 @@
           "howMany": 3,
           "lat": 40.9293371,
           "lng": -72.2788382,
-          "subId": "S296015089",
-          "userDisplayName": "Shai Mitra"
+          "subId": "S296381318",
+          "userDisplayName": "Patricia Lindsay"
         },
         {
           "locName": "Sagaponack Farm Fields",
@@ -4034,8 +4034,8 @@
           "howMany": 3,
           "lat": 40.9293371,
           "lng": -72.2788382,
-          "subId": "S296381318",
-          "userDisplayName": "Patricia Lindsay"
+          "subId": "S296015089",
+          "userDisplayName": "Shai Mitra"
         },
         {
           "locName": "Edith G. Read Wildlife Sanctuary & Rye Playland (incl. Playland Lake)",
@@ -4133,8 +4133,8 @@
           "howMany": 1,
           "lat": 40.9707879,
           "lng": -73.6697482,
-          "subId": "S295510892",
-          "userDisplayName": "Matthew Strobino"
+          "subId": "S295514521",
+          "userDisplayName": "Barbara Strobino"
         },
         {
           "locName": "Edith G. Read Wildlife Sanctuary & Rye Playland (incl. Playland Lake)",
@@ -4142,8 +4142,8 @@
           "howMany": 1,
           "lat": 40.9707879,
           "lng": -73.6697482,
-          "subId": "S295514521",
-          "userDisplayName": "Barbara Strobino"
+          "subId": "S295510892",
+          "userDisplayName": "Matthew Strobino"
         },
         {
           "locName": "Inwood Hill Park",
@@ -4212,8 +4212,8 @@
           "howMany": 3,
           "lat": 40.829375,
           "lng": -72.523435,
-          "subId": "S296055945",
-          "userDisplayName": "Scott Whitmore"
+          "subId": "S296055944",
+          "userDisplayName": "Lisa Wollerstein"
         },
         {
           "locName": "Shinnecock West to Hot Dog Beach",
@@ -4221,8 +4221,8 @@
           "howMany": 3,
           "lat": 40.829375,
           "lng": -72.523435,
-          "subId": "S296055944",
-          "userDisplayName": "Lisa Wollerstein"
+          "subId": "S296055945",
+          "userDisplayName": "Scott Whitmore"
         },
         {
           "locName": "Southold Town Beach",
@@ -4435,8 +4435,8 @@
           "howMany": 4,
           "lat": 40.5942621,
           "lng": -74.0017768,
-          "subId": "S295557222",
-          "userDisplayName": "Jo Ann Preston"
+          "subId": "S295557221",
+          "userDisplayName": "Tom Preston"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -4444,8 +4444,8 @@
           "howMany": 4,
           "lat": 40.5942621,
           "lng": -74.0017768,
-          "subId": "S295557221",
-          "userDisplayName": "Tom Preston"
+          "subId": "S295557222",
+          "userDisplayName": "Jo Ann Preston"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -4462,8 +4462,8 @@
           "howMany": 1,
           "lat": 40.9773181,
           "lng": -73.1186217,
-          "subId": "S295576503",
-          "userDisplayName": "Peter Osswald"
+          "subId": "S295545964",
+          "userDisplayName": "Four Harbors Audubon Society NY"
         },
         {
           "locName": "Old Field Point and Lighthouse",
@@ -4480,8 +4480,8 @@
           "howMany": 1,
           "lat": 40.9773181,
           "lng": -73.1186217,
-          "subId": "S295545964",
-          "userDisplayName": "Four Harbors Audubon Society NY"
+          "subId": "S295576503",
+          "userDisplayName": "Peter Osswald"
         },
         {
           "locName": "Bellport Bay Yacht Club",
@@ -4779,8 +4779,8 @@
           "howMany": 1,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         },
         {
           "locName": "Randalls Island",
@@ -4788,17 +4788,8 @@
           "howMany": 1,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
-        },
-        {
-          "locName": "Ceasar's Bay Bazaar",
-          "obsDt": "2026-01-22 14:10",
-          "howMany": 1,
-          "lat": 40.5942621,
-          "lng": -74.0017768,
-          "subId": "S295684910",
-          "userDisplayName": "karen o'hearn"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -4808,6 +4799,15 @@
           "lng": -74.0017768,
           "subId": "S295700089",
           "userDisplayName": "The Big Laskowski"
+        },
+        {
+          "locName": "Ceasar's Bay Bazaar",
+          "obsDt": "2026-01-22 14:10",
+          "howMany": 1,
+          "lat": 40.5942621,
+          "lng": -74.0017768,
+          "subId": "S295684910",
+          "userDisplayName": "karen o'hearn"
         },
         {
           "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
@@ -4896,8 +4896,8 @@
           "howMany": 1,
           "lat": 40.5942621,
           "lng": -74.0017768,
-          "subId": "S295557221",
-          "userDisplayName": "Tom Preston"
+          "subId": "S295557222",
+          "userDisplayName": "Jo Ann Preston"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -4905,8 +4905,8 @@
           "howMany": 1,
           "lat": 40.5942621,
           "lng": -74.0017768,
-          "subId": "S295557222",
-          "userDisplayName": "Jo Ann Preston"
+          "subId": "S295557221",
+          "userDisplayName": "Tom Preston"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -4940,8 +4940,8 @@
           "howMany": 11,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         },
         {
           "locName": "Randalls Island",
@@ -4949,8 +4949,8 @@
           "howMany": 11,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         }
       ],
       "totalObservations": 2
@@ -5079,8 +5079,8 @@
           "howMany": 1,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         },
         {
           "locName": "Randalls Island",
@@ -5088,8 +5088,8 @@
           "howMany": 1,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         },
         {
           "locName": "Randalls Island",
@@ -5573,8 +5573,8 @@
           "howMany": 6,
           "lat": 43.2444454,
           "lng": -77.4706893,
-          "subId": "S295499220",
-          "userDisplayName": "Tom Verhulst"
+          "subId": "S295492755",
+          "userDisplayName": "Jeanne Verhulst"
         },
         {
           "locName": "Whiting Rd. Nature Preserve",
@@ -5582,8 +5582,8 @@
           "howMany": 6,
           "lat": 43.2444454,
           "lng": -77.4706893,
-          "subId": "S295492755",
-          "userDisplayName": "Jeanne Verhulst"
+          "subId": "S295499220",
+          "userDisplayName": "Tom Verhulst"
         }
       ],
       "totalObservations": 8
@@ -5608,8 +5608,8 @@
           "howMany": 1,
           "lat": 40.8235524,
           "lng": -73.9253916,
-          "subId": "S296049931",
-          "userDisplayName": "ivelisse encarnacion"
+          "subId": "S296049933",
+          "userDisplayName": "leo wexler-mann"
         },
         {
           "locName": "Franz Sigel Park",
@@ -5617,8 +5617,8 @@
           "howMany": 1,
           "lat": 40.8235524,
           "lng": -73.9253916,
-          "subId": "S296049933",
-          "userDisplayName": "leo wexler-mann"
+          "subId": "S296049931",
+          "userDisplayName": "ivelisse encarnacion"
         },
         {
           "locName": "Cantiague Park",
@@ -5653,8 +5653,8 @@
           "howMany": 1,
           "lat": 40.8235524,
           "lng": -73.9253916,
-          "subId": "S295535283",
-          "userDisplayName": "Luis Maturana"
+          "subId": "S295535136",
+          "userDisplayName": "leo wexler-mann"
         },
         {
           "locName": "Franz Sigel Park",
@@ -5662,8 +5662,8 @@
           "howMany": 1,
           "lat": 40.8235524,
           "lng": -73.9253916,
-          "subId": "S295535136",
-          "userDisplayName": "leo wexler-mann"
+          "subId": "S295535283",
+          "userDisplayName": "Luis Maturana"
         },
         {
           "locName": "JFK Memorial Wildlife",
@@ -5926,8 +5926,8 @@
           "howMany": 5,
           "lat": 42.4270711,
           "lng": -77.9070968,
-          "subId": "S296060920",
-          "userDisplayName": "Chelsea Blauvelt Plimpton"
+          "subId": "S296060919",
+          "userDisplayName": "Charlie Plimpton"
         },
         {
           "locName": "Keeney Swamp SF--Swamp (CR 15A X Forest Road)",
@@ -5935,8 +5935,8 @@
           "howMany": 5,
           "lat": 42.4270711,
           "lng": -77.9070968,
-          "subId": "S296060919",
-          "userDisplayName": "Charlie Plimpton"
+          "subId": "S296060920",
+          "userDisplayName": "Chelsea Blauvelt Plimpton"
         },
         {
           "locName": "Danby SF--Michigan Hollow Rd., FLT Creek Area",
@@ -6215,8 +6215,8 @@
           "howMany": 1,
           "lat": 40.9293371,
           "lng": -72.2788382,
-          "subId": "S296381318",
-          "userDisplayName": "Patricia Lindsay"
+          "subId": "S296015089",
+          "userDisplayName": "Shai Mitra"
         },
         {
           "locName": "Sagaponack Farm Fields",
@@ -6224,8 +6224,8 @@
           "howMany": 1,
           "lat": 40.9293371,
           "lng": -72.2788382,
-          "subId": "S296015089",
-          "userDisplayName": "Shai Mitra"
+          "subId": "S296381318",
+          "userDisplayName": "Patricia Lindsay"
         },
         {
           "locName": "21 Fairfield Pond Ln, Sagaponack US-NY 40.91641, -72.26686",
@@ -6349,8 +6349,8 @@
           "howMany": 1,
           "lat": 40.6392421,
           "lng": -73.8730258,
-          "subId": "S295690691",
-          "userDisplayName": "The Big Laskowski"
+          "subId": "S295676222",
+          "userDisplayName": "karen o'hearn"
         },
         {
           "locName": "Shirley Chisholm SP (Pennsylvania Ave. Landfill)",
@@ -6367,8 +6367,8 @@
           "howMany": 1,
           "lat": 40.6392421,
           "lng": -73.8730258,
-          "subId": "S295676222",
-          "userDisplayName": "karen o'hearn"
+          "subId": "S295690691",
+          "userDisplayName": "The Big Laskowski"
         },
         {
           "locName": "Shirley Chisholm SP (Fountain Ave. Landfill)",
@@ -6412,6 +6412,15 @@
           "howMany": 1,
           "lat": 40.6392421,
           "lng": -73.8730258,
+          "subId": "S295572373",
+          "userDisplayName": "E R"
+        },
+        {
+          "locName": "Shirley Chisholm SP (Pennsylvania Ave. Landfill)",
+          "obsDt": "2026-01-21 12:57",
+          "howMany": 1,
+          "lat": 40.6392421,
+          "lng": -73.8730258,
           "subId": "S295567793",
           "userDisplayName": "MCHL ____"
         },
@@ -6423,15 +6432,6 @@
           "lng": -73.8730258,
           "subId": "S295567792",
           "userDisplayName": "Casey Ferio"
-        },
-        {
-          "locName": "Shirley Chisholm SP (Pennsylvania Ave. Landfill)",
-          "obsDt": "2026-01-21 12:57",
-          "howMany": 1,
-          "lat": 40.6392421,
-          "lng": -73.8730258,
-          "subId": "S295572373",
-          "userDisplayName": "E R"
         },
         {
           "locName": "Gardiners Island, East Hampton US-NY (41.0602,-72.0965)",
@@ -6594,15 +6594,6 @@
           "userDisplayName": "Corey Finger"
         },
         {
-          "locName": "Massapequa Preserve",
-          "obsDt": "2026-01-21 09:45",
-          "howMany": 1,
-          "lat": 40.6994398,
-          "lng": -73.4519019,
-          "subId": "S295488088",
-          "userDisplayName": "Richard Haimes"
-        },
-        {
           "locName": "Alley Pond Park--Oakland Lake",
           "obsDt": "2026-01-21 09:45",
           "howMany": 2,
@@ -6610,6 +6601,15 @@
           "lng": -73.7594122,
           "subId": "S295505246",
           "userDisplayName": "Ian Resnick"
+        },
+        {
+          "locName": "Massapequa Preserve",
+          "obsDt": "2026-01-21 09:45",
+          "howMany": 1,
+          "lat": 40.6994398,
+          "lng": -73.4519019,
+          "subId": "S295488088",
+          "userDisplayName": "Richard Haimes"
         },
         {
           "locName": "Massapequa Preserve",
@@ -6739,15 +6739,6 @@
           "howMany": 1,
           "lat": 43.0606218,
           "lng": -78.9882132,
-          "subId": "S296265008",
-          "userDisplayName": "Kevin Rybczynski"
-        },
-        {
-          "locName": "Buckhorn Island SP",
-          "obsDt": "2026-01-25 10:45",
-          "howMany": 1,
-          "lat": 43.0606218,
-          "lng": -78.9882132,
           "subId": "S296265007",
           "userDisplayName": "Rick Thomas"
         },
@@ -6762,12 +6753,12 @@
         },
         {
           "locName": "Buckhorn Island SP",
-          "obsDt": "2026-01-24 13:21",
+          "obsDt": "2026-01-25 10:45",
           "howMany": 1,
           "lat": 43.0606218,
           "lng": -78.9882132,
-          "subId": "S296052151",
-          "userDisplayName": "Karen Lee Lewis"
+          "subId": "S296265008",
+          "userDisplayName": "Kevin Rybczynski"
         },
         {
           "locName": "Buckhorn Island SP",
@@ -6777,6 +6768,15 @@
           "lng": -78.9882132,
           "subId": "S296076593",
           "userDisplayName": "Deanna Conners"
+        },
+        {
+          "locName": "Buckhorn Island SP",
+          "obsDt": "2026-01-24 13:21",
+          "howMany": 1,
+          "lat": 43.0606218,
+          "lng": -78.9882132,
+          "subId": "S296052151",
+          "userDisplayName": "Karen Lee Lewis"
         },
         {
           "locName": "Buckhorn Island SP",
@@ -6915,8 +6915,8 @@
           "howMany": 2,
           "lat": 43.1939256,
           "lng": -77.5326873,
-          "subId": "S296041832",
-          "userDisplayName": "Mary Jane Pelton"
+          "subId": "S296068772",
+          "userDisplayName": "Michael Rizzo"
         },
         {
           "locName": "Bayview Marina, Rochester",
@@ -6924,8 +6924,8 @@
           "howMany": 2,
           "lat": 43.1939256,
           "lng": -77.5326873,
-          "subId": "S296068772",
-          "userDisplayName": "Michael Rizzo"
+          "subId": "S296041832",
+          "userDisplayName": "Mary Jane Pelton"
         },
         {
           "locName": "Irondequoit Bay outlet: pier, beach and boat ramp",
@@ -7032,8 +7032,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295377263",
-          "userDisplayName": "Susan Logan Ward 🦉"
+          "subId": "S296087931",
+          "userDisplayName": "John Ward"
         },
         {
           "locName": "Sylvan Lake",
@@ -7041,8 +7041,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S296087931",
-          "userDisplayName": "John Ward"
+          "subId": "S295377263",
+          "userDisplayName": "Susan Logan Ward 🦉"
         },
         {
           "locName": "Sylvan Lake",
@@ -7076,6 +7076,15 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
+          "subId": "S296102679",
+          "userDisplayName": "Jeremy Thorp"
+        },
+        {
+          "locName": "Sylvan Lake",
+          "obsDt": "2026-01-24 15:00",
+          "howMany": 1,
+          "lat": 41.6086902,
+          "lng": -73.7405241,
           "subId": "S296099236",
           "userDisplayName": "MI YU"
         },
@@ -7087,15 +7096,6 @@
           "lng": -73.7405241,
           "subId": "S296099257",
           "userDisplayName": "Max Epstein"
-        },
-        {
-          "locName": "Sylvan Lake",
-          "obsDt": "2026-01-24 15:00",
-          "howMany": 1,
-          "lat": 41.6086902,
-          "lng": -73.7405241,
-          "subId": "S296102679",
-          "userDisplayName": "Jeremy Thorp"
         },
         {
           "locName": "Overlook, Rte. 89 N of Hog Hole",
@@ -7112,8 +7112,8 @@
           "howMany": 1,
           "lat": 42.4647843,
           "lng": -76.5246248,
-          "subId": "S296088241",
-          "userDisplayName": "Ryan Zucker"
+          "subId": "S296045442",
+          "userDisplayName": "Jay McGowan"
         },
         {
           "locName": "Overlook, Rte. 89 N of Hog Hole",
@@ -7121,8 +7121,8 @@
           "howMany": 1,
           "lat": 42.4647843,
           "lng": -76.5246248,
-          "subId": "S296045442",
-          "userDisplayName": "Jay McGowan"
+          "subId": "S296088241",
+          "userDisplayName": "Ryan Zucker"
         },
         {
           "locName": "Overlook, Rte. 89 N of Hog Hole",
@@ -7148,8 +7148,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295996432",
-          "userDisplayName": "Rebecca Bauer"
+          "subId": "S295995812",
+          "userDisplayName": "Joel Moore"
         },
         {
           "locName": "Sylvan Lake",
@@ -7157,8 +7157,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295995812",
-          "userDisplayName": "Joel Moore"
+          "subId": "S295996432",
+          "userDisplayName": "Rebecca Bauer"
         },
         {
           "locName": "Sylvan Lake",
@@ -7193,6 +7193,15 @@
           "howMany": 1,
           "lat": 42.4647843,
           "lng": -76.5246248,
+          "subId": "S296032704",
+          "userDisplayName": "Jay McGowan"
+        },
+        {
+          "locName": "Overlook, Rte. 89 N of Hog Hole",
+          "obsDt": "2026-01-24 10:22",
+          "howMany": 1,
+          "lat": 42.4647843,
+          "lng": -76.5246248,
           "subId": "S296038274",
           "userDisplayName": "David Benvent"
         },
@@ -7204,15 +7213,6 @@
           "lng": -76.5246248,
           "subId": "S296088256",
           "userDisplayName": "Ryan Zucker"
-        },
-        {
-          "locName": "Overlook, Rte. 89 N of Hog Hole",
-          "obsDt": "2026-01-24 10:22",
-          "howMany": 1,
-          "lat": 42.4647843,
-          "lng": -76.5246248,
-          "subId": "S296032704",
-          "userDisplayName": "Jay McGowan"
         },
         {
           "locName": "Sylvan Lake",
@@ -7247,8 +7247,8 @@
           "howMany": 1,
           "lat": 41.2380159,
           "lng": -73.8294039,
-          "subId": "S295976687",
-          "userDisplayName": "Kyle Bardwell"
+          "subId": "S295976688",
+          "userDisplayName": "Charlie Roberto"
         },
         {
           "locName": "New Croton Reservoir",
@@ -7256,8 +7256,8 @@
           "howMany": 1,
           "lat": 41.2380159,
           "lng": -73.8294039,
-          "subId": "S295976688",
-          "userDisplayName": "Charlie Roberto"
+          "subId": "S295976687",
+          "userDisplayName": "Kyle Bardwell"
         },
         {
           "locName": "Sylvan Lake",
@@ -7328,8 +7328,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295377263",
-          "userDisplayName": "Susan Logan Ward 🦉"
+          "subId": "S296087931",
+          "userDisplayName": "John Ward"
         },
         {
           "locName": "Sylvan Lake",
@@ -7337,8 +7337,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S296087931",
-          "userDisplayName": "John Ward"
+          "subId": "S295377263",
+          "userDisplayName": "Susan Logan Ward 🦉"
         },
         {
           "locName": "Sylvan Lake",
@@ -7416,8 +7416,8 @@
           "howMany": 1,
           "lat": 43.0130182,
           "lng": -77.571609,
-          "subId": "S296017572",
-          "userDisplayName": "Erika Venniro"
+          "subId": "S296036096",
+          "userDisplayName": "Brady Venniro"
         },
         {
           "locName": "Mendon Ponds Park--Quaker Pond Trail",
@@ -7425,8 +7425,8 @@
           "howMany": 1,
           "lat": 43.0130182,
           "lng": -77.571609,
-          "subId": "S296036096",
-          "userDisplayName": "Brady Venniro"
+          "subId": "S296017572",
+          "userDisplayName": "Erika Venniro"
         },
         {
           "locName": "Mendon Ponds Park--Quaker Pond Trail",
@@ -7671,8 +7671,8 @@
           "howMany": 2,
           "lat": 42.2684747,
           "lng": -76.5388437,
-          "subId": "S295951838",
-          "userDisplayName": "Jon Corcoran"
+          "subId": "S295951841",
+          "userDisplayName": "Melissa Mancuso"
         },
         {
           "locName": "Dirty Bird Ranch (Private)",
@@ -7680,8 +7680,8 @@
           "howMany": 2,
           "lat": 42.2684747,
           "lng": -76.5388437,
-          "subId": "S295951841",
-          "userDisplayName": "Melissa Mancuso"
+          "subId": "S295951838",
+          "userDisplayName": "Jon Corcoran"
         },
         {
           "locName": "Newland Park Jamestown",
@@ -7707,8 +7707,8 @@
           "howMany": 1,
           "lat": 42.0865827,
           "lng": -79.262656,
-          "subId": "S295571466",
-          "userDisplayName": "Kathleen Gustafson"
+          "subId": "S295551017",
+          "userDisplayName": "John Gustafson"
         },
         {
           "locName": "Newland Park Jamestown",
@@ -7716,8 +7716,8 @@
           "howMany": 1,
           "lat": 42.0865827,
           "lng": -79.262656,
-          "subId": "S295551017",
-          "userDisplayName": "John Gustafson"
+          "subId": "S295571466",
+          "userDisplayName": "Kathleen Gustafson"
         },
         {
           "locName": "Dirty Bird Ranch (Private)",
@@ -7761,8 +7761,8 @@
           "howMany": 1,
           "lat": 42.0865827,
           "lng": -79.262656,
-          "subId": "S295400979",
-          "userDisplayName": "Kathleen Gustafson"
+          "subId": "S295396872",
+          "userDisplayName": "John Gustafson"
         },
         {
           "locName": "Newland Park Jamestown",
@@ -7770,8 +7770,8 @@
           "howMany": 1,
           "lat": 42.0865827,
           "lng": -79.262656,
-          "subId": "S295396872",
-          "userDisplayName": "John Gustafson"
+          "subId": "S295400979",
+          "userDisplayName": "Kathleen Gustafson"
         }
       ],
       "totalObservations": 16
