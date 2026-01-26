@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Birds of New York</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #8892b0;
+            font-size: 1.1rem;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #64ffda;
+        }
+
+        .stat-label {
+            color: #8892b0;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #8892b0;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .species-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .species-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .species-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(100, 255, 218, 0.3);
+        }
+
+        .species-header {
+            margin-bottom: 1rem;
+        }
+
+        .species-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 0.25rem;
+        }
+
+        .species-scientific {
+            font-style: italic;
+            color: #8892b0;
+            font-size: 0.9rem;
+        }
+
+        .observation-count {
+            display: inline-block;
+            background: rgba(100, 255, 218, 0.15);
+            color: #64ffda;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .observations-list {
+            margin-top: 1rem;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .observation {
+            padding: 0.75rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .observation:last-child {
+            margin-bottom: 0;
+        }
+
+        .obs-location {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .obs-details {
+            color: #8892b0;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+
+        .obs-link {
+            color: #64ffda;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+
+        .obs-link:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 4rem;
+            color: #8892b0;
+        }
+
+        .error {
+            text-align: center;
+            padding: 2rem;
+            color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.1);
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #8892b0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #64ffda;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .stats {
+                gap: 1rem;
+            }
+
+            .stat-card {
+                padding: 1rem 1.5rem;
+            }
+
+            .species-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rare Birds of New York</h1>
+            <p class="subtitle">Notable bird observations from the past 7 days</p>
+        </header>
+
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="species-count">-</div>
+                <div class="stat-label">Rare Species</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="observation-count">-</div>
+                <div class="stat-label">Observations</div>
+            </div>
+        </div>
+
+        <p class="last-updated" id="last-updated">Loading...</p>
+
+        <div id="content">
+            <div class="loading">Loading bird data...</div>
+        </div>
+
+        <footer>
+            <p>Data from <a href="https://ebird.org" target="_blank">eBird</a> | Updated daily via GitHub Actions</p>
+        </footer>
+    </div>
+
+    <script>
+        async function loadBirdData() {
+            const contentEl = document.getElementById('content');
+            const speciesCountEl = document.getElementById('species-count');
+            const observationCountEl = document.getElementById('observation-count');
+            const lastUpdatedEl = document.getElementById('last-updated');
+
+            try {
+                const response = await fetch('data/birds.json');
+                if (!response.ok) throw new Error('Data not found');
+
+                const data = await response.json();
+
+                // Update stats
+                speciesCountEl.textContent = data.totalSpecies;
+                observationCountEl.textContent = data.totalObservations;
+
+                // Format last updated
+                const updated = new Date(data.lastUpdated);
+                lastUpdatedEl.textContent = `Last updated: ${updated.toLocaleDateString('en-US', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                })} UTC`;
+
+                // Render species cards
+                if (data.species.length === 0) {
+                    contentEl.innerHTML = '<div class="loading">No rare bird observations in the past 7 days.</div>';
+                    return;
+                }
+
+                const html = data.species.map(species => {
+                    const observations = species.observations.slice(0, 5).map(obs => {
+                        const date = new Date(obs.obsDt);
+                        const dateStr = date.toLocaleDateString('en-US', {
+                            month: 'short',
+                            day: 'numeric'
+                        });
+                        const count = obs.howMany > 1 ? `${obs.howMany} birds` : '1 bird';
+                        const checklistLink = obs.subId
+                            ? `<a href="https://ebird.org/checklist/${obs.subId}" target="_blank" class="obs-link">View checklist</a>`
+                            : '';
+
+                        return `
+                            <div class="observation">
+                                <div class="obs-location">${obs.locName}</div>
+                                <div class="obs-details">
+                                    ${dateStr} &bull; ${count} &bull; ${obs.userDisplayName}
+                                    ${checklistLink ? ' &bull; ' + checklistLink : ''}
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+
+                    const moreCount = species.observations.length - 5;
+                    const moreText = moreCount > 0 ? `<div class="observation" style="text-align: center; color: #8892b0;">+${moreCount} more observations</div>` : '';
+
+                    return `
+                        <div class="species-card">
+                            <div class="species-header">
+                                <div class="species-name">${species.comName}</div>
+                                <div class="species-scientific">${species.sciName}</div>
+                                <span class="observation-count">${species.totalObservations} observation${species.totalObservations > 1 ? 's' : ''}</span>
+                            </div>
+                            <div class="observations-list">
+                                ${observations}
+                                ${moreText}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+                contentEl.innerHTML = `<div class="species-grid">${html}</div>`;
+
+            } catch (error) {
+                console.error('Error loading data:', error);
+                contentEl.innerHTML = `
+                    <div class="error">
+                        <p>Unable to load bird data. The data file may not exist yet.</p>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                            Run the scraper script to generate data, or wait for the next scheduled update.
+                        </p>
+                    </div>
+                `;
+            }
+        }
+
+        loadBirdData();
+    </script>
+</body>
+</html>
