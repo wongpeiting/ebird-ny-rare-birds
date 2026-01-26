@@ -156,9 +156,9 @@ def main():
         total_obs = sum(s["totalObservations"] for s in processed_data)
         print(f"Found {len(processed_data)} unique species with {total_obs} unique observations")
 
-        # Fetch images for top 30 rarest birds
-        print("Fetching bird images from Wikipedia...")
-        for i, species in enumerate(processed_data[:30]):
+        # Fetch images for all birds
+        print(f"Fetching bird images from Wikipedia ({len(processed_data)} species)...")
+        for i, species in enumerate(processed_data):
             img_url = fetch_bird_image(species["comName"])
             species["imageUrl"] = img_url
             if img_url:
