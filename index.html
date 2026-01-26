@@ -546,7 +546,7 @@
 
         function resetMapView() {
             if (defaultBounds) {
-                map.fitBounds(defaultBounds, { padding: [50, 50], maxZoom: 10 });
+                map.fitBounds(defaultBounds, { padding: [50, 50], maxZoom: 12 });
             } else {
                 map.setView([42.5, -75.5], 7);
             }
@@ -771,7 +771,7 @@
                 if (locations.length > 0) {
                     const bounds = L.latLngBounds(locations.map(l => [l.lat, l.lng]));
                     defaultBounds = bounds;
-                    map.fitBounds(bounds, { padding: [50, 50], maxZoom: 10 });
+                    map.fitBounds(bounds, { padding: [50, 50], maxZoom: 12 });
                 }
 
             } catch (error) {
