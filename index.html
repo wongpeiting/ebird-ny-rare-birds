@@ -78,15 +78,13 @@
             margin-bottom: 3rem;
         }
 
-        /* Hero Section - Rarest Bird */
+        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             border: 3px solid #4ecdc4;
-            border-radius: 0;
             padding: 3rem;
             margin-bottom: 3rem;
             position: relative;
-            overflow: hidden;
         }
 
         .hero::before {
@@ -109,53 +107,23 @@
             align-items: center;
         }
 
-        .hero-image-container {
-            position: relative;
-        }
-
-        .hero-image {
+        .pixel-canvas {
             width: 100%;
             aspect-ratio: 1;
-            object-fit: cover;
-            image-rendering: pixelated;
-            filter: contrast(1.1) saturate(0.8);
             border: 4px solid #4ecdc4;
             background: #1a1a2e;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
         }
 
-        .pixel-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                repeating-linear-gradient(
-                    0deg,
-                    transparent,
-                    transparent 3px,
-                    rgba(0, 0, 0, 0.1) 3px,
-                    rgba(0, 0, 0, 0.1) 6px
-                ),
-                repeating-linear-gradient(
-                    90deg,
-                    transparent,
-                    transparent 3px,
-                    rgba(0, 0, 0, 0.1) 3px,
-                    rgba(0, 0, 0, 0.1) 6px
-                );
-            pointer-events: none;
+        .pixel-canvas-rect {
+            aspect-ratio: 4/3;
         }
 
-        .no-image {
-            width: 100%;
-            aspect-ratio: 1;
-            background: linear-gradient(135deg, #1a1a2e, #2a2a4e);
-            border: 4px solid #4ecdc4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
+        .pixel-canvas-small {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #222;
         }
 
         .hero-info h2 {
@@ -262,25 +230,6 @@
         .rank-2 .rank-badge { background: #c0c0c0; color: #000; }
         .rank-3 .rank-badge { background: #cd7f32; color: #000; }
 
-        .runner-image {
-            width: 100%;
-            aspect-ratio: 4/3;
-            object-fit: cover;
-            image-rendering: pixelated;
-            filter: contrast(1.05) saturate(0.85);
-            background: #1a1a2e;
-        }
-
-        .runner-image-placeholder {
-            width: 100%;
-            aspect-ratio: 4/3;
-            background: linear-gradient(135deg, #1a1a2e, #2a2a4e);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-        }
-
         .runner-info {
             padding: 1rem;
         }
@@ -333,7 +282,7 @@
             border: 1px solid #1a1a25;
             padding: 1rem;
             display: grid;
-            grid-template-columns: 60px 1fr auto;
+            grid-template-columns: 60px 50px 1fr auto;
             gap: 1rem;
             align-items: center;
             transition: border-color 0.2s;
@@ -348,26 +297,6 @@
             color: #333;
             font-weight: bold;
             text-align: center;
-        }
-
-        .bird-thumb {
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-            image-rendering: pixelated;
-            filter: contrast(1.05) saturate(0.8);
-            border: 2px solid #222;
-        }
-
-        .bird-thumb-placeholder {
-            width: 50px;
-            height: 50px;
-            background: #1a1a2e;
-            border: 2px solid #222;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
         }
 
         .bird-info-compact h3 {
@@ -416,17 +345,13 @@
             text-decoration: none;
         }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
-
         @media (max-width: 900px) {
             .hero-content {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
 
-            .hero-image-container {
+            .hero-content > div:first-child {
                 max-width: 250px;
                 margin: 0 auto;
             }
@@ -441,33 +366,13 @@
         }
 
         @media (max-width: 600px) {
-            .container {
-                padding: 1rem;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            .stats {
-                gap: 1.5rem;
-            }
-
-            .stat-number {
-                font-size: 2rem;
-            }
-
-            .hero {
-                padding: 1.5rem;
-            }
-
-            .hero-info h2 {
-                font-size: 1.5rem;
-            }
-
-            .bird-list {
-                grid-template-columns: 1fr;
-            }
+            .container { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            .stats { gap: 1.5rem; }
+            .stat-number { font-size: 2rem; }
+            .hero { padding: 1.5rem; }
+            .hero-info h2 { font-size: 1.5rem; }
+            .bird-list { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -501,10 +406,176 @@
     </div>
 
     <script>
-        const BIRD_EMOJIS = ['🦅', '🦆', '🦉', '🦜', '🐦', '🦚', '🦩', '🦢', '🕊️', '🦃'];
+        // 6-bit color palette (64 colors)
+        const PALETTE_6BIT = [];
+        for (let r = 0; r < 4; r++) {
+            for (let g = 0; g < 4; g++) {
+                for (let b = 0; b < 4; b++) {
+                    PALETTE_6BIT.push([r * 85, g * 85, b * 85]);
+                }
+            }
+        }
 
-        function getRandomEmoji() {
-            return BIRD_EMOJIS[Math.floor(Math.random() * BIRD_EMOJIS.length)];
+        function findClosestColor(r, g, b) {
+            let minDist = Infinity;
+            let closest = [0, 0, 0];
+            for (const [pr, pg, pb] of PALETTE_6BIT) {
+                const dist = (r - pr) ** 2 + (g - pg) ** 2 + (b - pb) ** 2;
+                if (dist < minDist) {
+                    minDist = dist;
+                    closest = [pr, pg, pb];
+                }
+            }
+            return closest;
+        }
+
+        function pixelateImage(img, canvas, pixelSize = 8) {
+            const ctx = canvas.getContext('2d');
+            const w = canvas.width;
+            const h = canvas.height;
+
+            // Draw scaled down
+            const smallW = Math.ceil(w / pixelSize);
+            const smallH = Math.ceil(h / pixelSize);
+
+            // Create offscreen canvas for processing
+            const offscreen = document.createElement('canvas');
+            offscreen.width = smallW;
+            offscreen.height = smallH;
+            const offCtx = offscreen.getContext('2d');
+
+            // Draw small version
+            offCtx.drawImage(img, 0, 0, smallW, smallH);
+
+            // Get pixel data and apply 6-bit palette
+            const imageData = offCtx.getImageData(0, 0, smallW, smallH);
+            const data = imageData.data;
+
+            for (let i = 0; i < data.length; i += 4) {
+                const [r, g, b] = findClosestColor(data[i], data[i + 1], data[i + 2]);
+                data[i] = r;
+                data[i + 1] = g;
+                data[i + 2] = b;
+            }
+
+            offCtx.putImageData(imageData, 0, 0);
+
+            // Draw pixelated version back to main canvas
+            ctx.imageSmoothingEnabled = false;
+            ctx.drawImage(offscreen, 0, 0, smallW, smallH, 0, 0, w, h);
+        }
+
+        function drawPixelBird(canvas, seed = 0) {
+            const ctx = canvas.getContext('2d');
+            const w = canvas.width;
+            const h = canvas.height;
+            const pixelSize = Math.max(4, Math.floor(w / 32));
+
+            // Seeded random for consistent birds
+            const random = () => {
+                seed = (seed * 1103515245 + 12345) & 0x7fffffff;
+                return seed / 0x7fffffff;
+            };
+
+            // Background gradient
+            ctx.fillStyle = '#1a1a2e';
+            ctx.fillRect(0, 0, w, h);
+
+            // Bird colors from palette
+            const bodyColors = [
+                [85, 85, 170], [170, 85, 85], [85, 170, 85], [170, 170, 85],
+                [85, 170, 170], [170, 85, 170], [170, 170, 170], [255, 170, 85]
+            ];
+            const bodyColor = bodyColors[Math.floor(random() * bodyColors.length)];
+            const darkColor = bodyColor.map(c => Math.max(0, c - 85));
+            const lightColor = bodyColor.map(c => Math.min(255, c + 85));
+
+            // Center the bird
+            const centerX = w / 2;
+            const centerY = h / 2;
+
+            // Simple bird shape (body, head, wing, tail, eye, beak)
+            const drawPixel = (x, y, color) => {
+                ctx.fillStyle = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+                ctx.fillRect(
+                    centerX + x * pixelSize - pixelSize * 4,
+                    centerY + y * pixelSize - pixelSize * 2,
+                    pixelSize,
+                    pixelSize
+                );
+            };
+
+            // Body (oval-ish)
+            for (let x = 0; x < 8; x++) {
+                for (let y = 0; y < 5; y++) {
+                    if ((x === 0 || x === 7) && (y === 0 || y === 4)) continue;
+                    drawPixel(x, y, bodyColor);
+                }
+            }
+
+            // Head
+            for (let x = -2; x < 2; x++) {
+                for (let y = -1; y < 3; y++) {
+                    if ((x === -2 || x === 1) && (y === -1 || y === 2)) continue;
+                    drawPixel(x, y, bodyColor);
+                }
+            }
+
+            // Wing
+            for (let x = 2; x < 6; x++) {
+                for (let y = 1; y < 4; y++) {
+                    if (random() > 0.3) drawPixel(x, y, darkColor);
+                }
+            }
+
+            // Tail
+            for (let x = 7; x < 10; x++) {
+                drawPixel(x, 2, darkColor);
+                if (x < 9) drawPixel(x, 1, darkColor);
+                if (x < 9) drawPixel(x, 3, darkColor);
+            }
+
+            // Eye
+            drawPixel(-1, 0, [0, 0, 0]);
+            drawPixel(-1, 0, [255, 255, 255]);
+
+            // Beak
+            drawPixel(-3, 1, [255, 170, 0]);
+            drawPixel(-4, 1, [255, 170, 0]);
+
+            // Legs
+            drawPixel(2, 5, [85, 85, 85]);
+            drawPixel(4, 5, [85, 85, 85]);
+            drawPixel(2, 6, [85, 85, 85]);
+            drawPixel(4, 6, [85, 85, 85]);
+        }
+
+        function createPixelCanvas(imageUrl, className, size, seed) {
+            const canvas = document.createElement('canvas');
+            canvas.className = `pixel-canvas ${className}`;
+
+            if (className.includes('small')) {
+                canvas.width = 50;
+                canvas.height = 50;
+            } else if (className.includes('rect')) {
+                canvas.width = 280;
+                canvas.height = 210;
+            } else {
+                canvas.width = size || 300;
+                canvas.height = size || 300;
+            }
+
+            if (imageUrl) {
+                const img = new Image();
+                img.crossOrigin = 'anonymous';
+                img.onload = () => pixelateImage(img, canvas, className.includes('small') ? 4 : 8);
+                img.onerror = () => drawPixelBird(canvas, seed);
+                img.src = imageUrl;
+            } else {
+                drawPixelBird(canvas, seed);
+            }
+
+            return canvas;
         }
 
         function formatDate(dateStr) {
@@ -514,81 +585,99 @@
 
         function renderHero(bird) {
             const latestObs = bird.observations[0];
-            const imgHtml = bird.imageUrl
-                ? `<img src="${bird.imageUrl}" alt="${bird.comName}" class="hero-image"><div class="pixel-overlay"></div>`
-                : `<div class="no-image">${getRandomEmoji()}</div>`;
+            const container = document.createElement('section');
+            container.className = 'hero';
 
-            return `
-                <section class="hero">
-                    <div class="hero-content">
-                        <div class="hero-image-container">
-                            ${imgHtml}
-                        </div>
-                        <div class="hero-info">
-                            <h2>${bird.comName}</h2>
-                            <p class="scientific">${bird.sciName}</p>
-                            <div class="hero-stats">
-                                <div class="hero-stat">
-                                    <div class="hero-stat-value">${bird.totalObservations}</div>
-                                    <div class="hero-stat-label">Sightings this week</div>
-                                </div>
-                                <div class="hero-stat">
-                                    <div class="hero-stat-value">#1</div>
-                                    <div class="hero-stat-label">Rarity Rank</div>
-                                </div>
-                            </div>
-                            <div class="hero-sighting">
-                                <div class="hero-sighting-label">Latest Sighting</div>
-                                <div class="hero-sighting-location">${latestObs.locName}</div>
-                                <div class="hero-sighting-details">
-                                    ${formatDate(latestObs.obsDt)} · ${latestObs.howMany || 1} bird${(latestObs.howMany || 1) > 1 ? 's' : ''} · by ${latestObs.userDisplayName}
-                                    ${latestObs.subId ? ` · <a href="https://ebird.org/checklist/${latestObs.subId}" target="_blank" style="color: #4ecdc4;">View checklist</a>` : ''}
-                                </div>
-                            </div>
-                        </div>
+            const content = document.createElement('div');
+            content.className = 'hero-content';
+
+            const imgContainer = document.createElement('div');
+            imgContainer.appendChild(createPixelCanvas(bird.imageUrl, '', 300, bird.comName.length));
+
+            const info = document.createElement('div');
+            info.className = 'hero-info';
+            info.innerHTML = `
+                <h2>${bird.comName}</h2>
+                <p class="scientific">${bird.sciName}</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">${bird.totalObservations}</div>
+                        <div class="hero-stat-label">Sightings this week</div>
                     </div>
-                </section>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">#1</div>
+                        <div class="hero-stat-label">Rarity Rank</div>
+                    </div>
+                </div>
+                <div class="hero-sighting">
+                    <div class="hero-sighting-label">Latest Sighting</div>
+                    <div class="hero-sighting-location">${latestObs.locName}</div>
+                    <div class="hero-sighting-details">
+                        ${formatDate(latestObs.obsDt)} · ${latestObs.howMany || 1} bird${(latestObs.howMany || 1) > 1 ? 's' : ''} · by ${latestObs.userDisplayName}
+                        ${latestObs.subId ? ` · <a href="https://ebird.org/checklist/${latestObs.subId}" target="_blank" style="color: #4ecdc4;">View checklist</a>` : ''}
+                    </div>
+                </div>
             `;
+
+            content.appendChild(imgContainer);
+            content.appendChild(info);
+            container.appendChild(content);
+
+            return container;
         }
 
         function renderRunnerCard(bird, rank) {
             const rankClass = rank <= 3 ? `rank-${rank}` : '';
-            const imgHtml = bird.imageUrl
-                ? `<img src="${bird.imageUrl}" alt="${bird.comName}" class="runner-image">`
-                : `<div class="runner-image-placeholder">${getRandomEmoji()}</div>`;
+            const card = document.createElement('div');
+            card.className = `runner-card ${rankClass}`;
 
-            return `
-                <div class="runner-card ${rankClass}">
-                    <div class="rank-badge">#${rank}</div>
-                    ${imgHtml}
-                    <div class="runner-info">
-                        <div class="runner-name">${bird.comName}</div>
-                        <div class="runner-scientific">${bird.sciName}</div>
-                        <div class="runner-meta">
-                            <span class="obs-count">${bird.totalObservations} sighting${bird.totalObservations > 1 ? 's' : ''}</span>
-                            <span>${formatDate(bird.observations[0].obsDt)}</span>
-                        </div>
-                    </div>
+            const badge = document.createElement('div');
+            badge.className = 'rank-badge';
+            badge.textContent = `#${rank}`;
+
+            card.appendChild(badge);
+            card.appendChild(createPixelCanvas(bird.imageUrl, 'pixel-canvas-rect', null, bird.comName.length + rank));
+
+            const info = document.createElement('div');
+            info.className = 'runner-info';
+            info.innerHTML = `
+                <div class="runner-name">${bird.comName}</div>
+                <div class="runner-scientific">${bird.sciName}</div>
+                <div class="runner-meta">
+                    <span class="obs-count">${bird.totalObservations} sighting${bird.totalObservations > 1 ? 's' : ''}</span>
+                    <span>${formatDate(bird.observations[0].obsDt)}</span>
                 </div>
             `;
+
+            card.appendChild(info);
+            return card;
         }
 
         function renderBirdItem(bird) {
-            const imgHtml = bird.imageUrl
-                ? `<img src="${bird.imageUrl}" alt="${bird.comName}" class="bird-thumb">`
-                : `<div class="bird-thumb-placeholder">${getRandomEmoji()}</div>`;
+            const item = document.createElement('div');
+            item.className = 'bird-item';
 
-            return `
-                <div class="bird-item">
-                    <div class="bird-rank">#${bird.rarityRank}</div>
-                    ${imgHtml}
-                    <div class="bird-info-compact">
-                        <h3>${bird.comName}</h3>
-                        <div class="scientific">${bird.sciName}</div>
-                    </div>
-                    <div class="bird-obs-count">${bird.totalObservations}</div>
-                </div>
+            const rank = document.createElement('div');
+            rank.className = 'bird-rank';
+            rank.textContent = `#${bird.rarityRank}`;
+
+            const info = document.createElement('div');
+            info.className = 'bird-info-compact';
+            info.innerHTML = `
+                <h3>${bird.comName}</h3>
+                <div class="scientific">${bird.sciName}</div>
             `;
+
+            const count = document.createElement('div');
+            count.className = 'bird-obs-count';
+            count.textContent = bird.totalObservations;
+
+            item.appendChild(rank);
+            item.appendChild(createPixelCanvas(bird.imageUrl, 'pixel-canvas-small', null, bird.comName.length + bird.rarityRank));
+            item.appendChild(info);
+            item.appendChild(count);
+
+            return item;
         }
 
         async function loadBirdData() {
@@ -620,30 +709,44 @@
                 }
 
                 const [rarest, ...rest] = data.species;
-                const runners = rest.slice(0, 9);  // Next 9 rarest (ranks 2-10)
-                const others = rest.slice(9);       // Everyone else
+                const runners = rest.slice(0, 9);
+                const others = rest.slice(9);
 
-                let html = renderHero(rarest);
+                // Clear and build content
+                contentEl.innerHTML = '';
 
+                // Hero
+                contentEl.appendChild(renderHero(rarest));
+
+                // Top 10
                 if (runners.length > 0) {
-                    html += `
-                        <h2 class="section-title">Top 10 Rarest</h2>
-                        <div class="runners-up">
-                            ${runners.map((bird, i) => renderRunnerCard(bird, i + 2)).join('')}
-                        </div>
-                    `;
+                    const title1 = document.createElement('h2');
+                    title1.className = 'section-title';
+                    title1.textContent = 'Top 10 Rarest';
+                    contentEl.appendChild(title1);
+
+                    const runnersGrid = document.createElement('div');
+                    runnersGrid.className = 'runners-up';
+                    runners.forEach((bird, i) => {
+                        runnersGrid.appendChild(renderRunnerCard(bird, i + 2));
+                    });
+                    contentEl.appendChild(runnersGrid);
                 }
 
+                // Others
                 if (others.length > 0) {
-                    html += `
-                        <h2 class="section-title">Other Notable Sightings</h2>
-                        <div class="bird-list">
-                            ${others.map(bird => renderBirdItem(bird)).join('')}
-                        </div>
-                    `;
-                }
+                    const title2 = document.createElement('h2');
+                    title2.className = 'section-title';
+                    title2.textContent = 'Other Notable Sightings';
+                    contentEl.appendChild(title2);
 
-                contentEl.innerHTML = html;
+                    const birdList = document.createElement('div');
+                    birdList.className = 'bird-list';
+                    others.forEach(bird => {
+                        birdList.appendChild(renderBirdItem(bird));
+                    });
+                    contentEl.appendChild(birdList);
+                }
 
             } catch (error) {
                 console.error('Error loading data:', error);
