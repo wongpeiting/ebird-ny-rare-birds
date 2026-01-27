@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-01-26T23:22:43.655960Z",
+  "lastUpdated": "2026-01-27T06:40:26.707201Z",
   "region": "New York",
   "regionCode": "US-NY",
   "daysBack": 7,
-  "totalSpecies": 108,
-  "totalObservations": 783,
+  "totalSpecies": 109,
+  "totalObservations": 795,
   "species": [
     {
       "comName": "American Tree Sparrow",
@@ -829,6 +829,34 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Larus_glaucoides_IthacaNY.jpg/500px-Larus_glaucoides_IthacaNY.jpg"
     },
     {
+      "comName": "Lark Sparrow",
+      "sciName": "Chondestes grammacus",
+      "speciesCode": "larspa",
+      "observations": [
+        {
+          "locName": "Six Diamonds Ballfields",
+          "obsDt": "2026-01-26 16:00",
+          "howMany": 1,
+          "lat": 40.5830692,
+          "lng": -73.9896828,
+          "subId": "S296487028",
+          "userDisplayName": "Anonymous eBirder"
+        },
+        {
+          "locName": "Calvert Vaux Park (Dreier-Offerman Park)",
+          "obsDt": "2026-01-26 16:00",
+          "howMany": 1,
+          "lat": 40.5848762,
+          "lng": -73.9945752,
+          "subId": "S296487013",
+          "userDisplayName": "Anonymous eBirder"
+        }
+      ],
+      "totalObservations": 2,
+      "rarityRank": 40,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LarkSparrow.jpg/500px-LarkSparrow.jpg"
+    },
+    {
       "comName": "Lesser Scaup",
       "sciName": "Aythya affinis",
       "speciesCode": "lessca",
@@ -853,7 +881,7 @@
         }
       ],
       "totalObservations": 2,
-      "rarityRank": 40,
+      "rarityRank": 41,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Drake_Lesser_Scaup_%28Aythya_affinis%29_Barengat_Inlet%2C_New_Jersey%2C_USA.jpg/500px-Drake_Lesser_Scaup_%28Aythya_affinis%29_Barengat_Inlet%2C_New_Jersey%2C_USA.jpg"
     },
     {
@@ -881,7 +909,7 @@
         }
       ],
       "totalObservations": 2,
-      "rarityRank": 41,
+      "rarityRank": 42,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg/500px-Male_northern_cardinal_in_Central_Park_%2852612%29.jpg"
     },
     {
@@ -909,7 +937,7 @@
         }
       ],
       "totalObservations": 2,
-      "rarityRank": 42,
+      "rarityRank": 43,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Male_Painted_Bunting_Singing.jpg/500px-Male_Painted_Bunting_Singing.jpg"
     },
     {
@@ -937,7 +965,7 @@
         }
       ],
       "totalObservations": 2,
-      "rarityRank": 43,
+      "rarityRank": 44,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/500px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg"
     },
     {
@@ -965,7 +993,7 @@
         }
       ],
       "totalObservations": 2,
-      "rarityRank": 44,
+      "rarityRank": 45,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Razorbill_with_a_nice_catch.jpg/500px-Razorbill_with_a_nice_catch.jpg"
     },
     {
@@ -993,7 +1021,7 @@
         }
       ],
       "totalObservations": 2,
-      "rarityRank": 45,
+      "rarityRank": 46,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Red-tailed_Hawk_%2845812546121%29.jpg/500px-Red-tailed_Hawk_%2845812546121%29.jpg"
     },
     {
@@ -1030,7 +1058,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 46,
+      "rarityRank": 47,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/American_goshawk.jpg/500px-American_goshawk.jpg"
     },
     {
@@ -1053,8 +1081,8 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         },
         {
           "locName": "Randalls Island",
@@ -1062,12 +1090,12 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 47,
+      "rarityRank": 48,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Common_Goldeneye_%28Bucephala_clangula%29.jpg/500px-Common_Goldeneye_%28Bucephala_clangula%29.jpg"
     },
     {
@@ -1075,15 +1103,6 @@
       "sciName": "Sturnella magna",
       "speciesCode": "easmea",
       "observations": [
-        {
-          "locName": "Edgemere Landfill (restricted access)",
-          "obsDt": "2026-01-24 10:06",
-          "howMany": 14,
-          "lat": 40.6061334,
-          "lng": -73.7788582,
-          "subId": "S296020685",
-          "userDisplayName": "Nelson Pascuzzi"
-        },
         {
           "locName": "Edgemere Landfill (restricted access)",
           "obsDt": "2026-01-24 10:06",
@@ -1099,12 +1118,21 @@
           "howMany": 14,
           "lat": 40.6061334,
           "lng": -73.7788582,
+          "subId": "S296020685",
+          "userDisplayName": "Nelson Pascuzzi"
+        },
+        {
+          "locName": "Edgemere Landfill (restricted access)",
+          "obsDt": "2026-01-24 10:06",
+          "howMany": 14,
+          "lat": 40.6061334,
+          "lng": -73.7788582,
           "subId": "S296018282",
           "userDisplayName": "Benjamin D"
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 48,
+      "rarityRank": 49,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Eastern_meadowlark_%28Sturnella_magna_mexicana%29_Orange_Walk.jpg/500px-Eastern_meadowlark_%28Sturnella_magna_mexicana%29_Orange_Walk.jpg"
     },
     {
@@ -1127,8 +1155,8 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         },
         {
           "locName": "Randalls Island",
@@ -1136,12 +1164,12 @@
           "howMany": 4,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 49,
+      "rarityRank": 50,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Field_sparrow_in_CP_%2841484%29_%28cropped%29.jpg/500px-Field_sparrow_in_CP_%2841484%29_%28cropped%29.jpg"
     },
     {
@@ -1178,7 +1206,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 50,
+      "rarityRank": 51,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Fish_crow_in_Red_Hook_%2842712%29.jpg/500px-Fish_crow_in_Red_Hook_%2842712%29.jpg"
     },
     {
@@ -1215,7 +1243,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 51,
+      "rarityRank": 52,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Horned_lark_%28eremophila_alpestris%29_01.jpg/500px-Horned_lark_%28eremophila_alpestris%29_01.jpg"
     },
     {
@@ -1252,7 +1280,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 52,
+      "rarityRank": 53,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Larus_glaucoides_IthacaNY.jpg/500px-Larus_glaucoides_IthacaNY.jpg"
     },
     {
@@ -1289,7 +1317,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 53,
+      "rarityRank": 54,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Lapland_Longspur_-_Calcarius_lapponicus_-_Sportittlingur_1.jpg/500px-Lapland_Longspur_-_Calcarius_lapponicus_-_Sportittlingur_1.jpg"
     },
     {
@@ -1326,7 +1354,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 54,
+      "rarityRank": 55,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Northern_Pintails_%28Male_%26_Female%29_I_IMG_0911.jpg/500px-Northern_Pintails_%28Male_%26_Female%29_I_IMG_0911.jpg"
     },
     {
@@ -1363,7 +1391,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 55,
+      "rarityRank": 56,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Short_Eared_Owl_on_the_Ground.jpg/500px-Short_Eared_Owl_on_the_Ground.jpg"
     },
     {
@@ -1400,7 +1428,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 56,
+      "rarityRank": 57,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Virginia_rail_%2841109%29.jpg/500px-Virginia_rail_%2841109%29.jpg"
     },
     {
@@ -1437,7 +1465,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 57,
+      "rarityRank": 58,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Melanitta_deglandi_%28White-winged_Scoter%29.jpg/500px-Melanitta_deglandi_%28White-winged_Scoter%29.jpg"
     },
     {
@@ -1474,7 +1502,7 @@
         }
       ],
       "totalObservations": 3,
-      "rarityRank": 58,
+      "rarityRank": 59,
       "imageUrl": null
     },
     {
@@ -1506,8 +1534,8 @@
           "howMany": 2,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         },
         {
           "locName": "Randalls Island",
@@ -1515,12 +1543,12 @@
           "howMany": 2,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         }
       ],
       "totalObservations": 4,
-      "rarityRank": 59,
+      "rarityRank": 60,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/American_Wigeon_Male.jpg/500px-American_Wigeon_Male.jpg"
     },
     {
@@ -1566,54 +1594,8 @@
         }
       ],
       "totalObservations": 4,
-      "rarityRank": 60,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Aythya_valisineria_at_Las_Gallinas_Wildlife_Ponds.jpg/500px-Aythya_valisineria_at_Las_Gallinas_Wildlife_Ponds.jpg"
-    },
-    {
-      "comName": "Fox Sparrow",
-      "sciName": "Passerella iliaca",
-      "speciesCode": "foxspa",
-      "observations": [
-        {
-          "locName": "US-NY-Newfane-1682-1750 Transit Rd - 43.3330x-78.6978",
-          "obsDt": "2026-01-26 12:06",
-          "howMany": 1,
-          "lat": 43.332975,
-          "lng": -78.697807,
-          "subId": "S296425747",
-          "userDisplayName": "Joel Strong"
-        },
-        {
-          "locName": "15 Metzger Dr Orchard Park",
-          "obsDt": "2026-01-26 12:05",
-          "howMany": 1,
-          "lat": 42.7730483,
-          "lng": -78.7220129,
-          "subId": "S296437866",
-          "userDisplayName": "Kathy O'Connor-Mullen"
-        },
-        {
-          "locName": "15 Metzger Dr Orchard Park",
-          "obsDt": "2026-01-25 08:30",
-          "howMany": 1,
-          "lat": 42.7730483,
-          "lng": -78.7220129,
-          "subId": "S296181782",
-          "userDisplayName": "Kathy O'Connor-Mullen"
-        },
-        {
-          "locName": "15 Metzger Dr Orchard Park",
-          "obsDt": "2026-01-21 12:35",
-          "howMany": 1,
-          "lat": 42.7730483,
-          "lng": -78.7220129,
-          "subId": "S295516660",
-          "userDisplayName": "Kathy O'Connor-Mullen"
-        }
-      ],
-      "totalObservations": 4,
       "rarityRank": 61,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Fox_Sparrow_-_27368714849.jpg/500px-Fox_Sparrow_-_27368714849.jpg"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Aythya_valisineria_at_Las_Gallinas_Wildlife_Ponds.jpg/500px-Aythya_valisineria_at_Las_Gallinas_Wildlife_Ponds.jpg"
     },
     {
       "comName": "Marsh Wren",
@@ -1681,6 +1663,15 @@
           "howMany": 1,
           "lat": 40.5835871,
           "lng": -73.5514346,
+          "subId": "S295567775",
+          "userDisplayName": "Casey Ferio"
+        },
+        {
+          "locName": "Jones Beach SP--West End",
+          "obsDt": "2026-01-21 13:55",
+          "howMany": 1,
+          "lat": 40.5835871,
+          "lng": -73.5514346,
           "subId": "S295572374",
           "userDisplayName": "E R"
         },
@@ -1692,15 +1683,6 @@
           "lng": -73.5514346,
           "subId": "S295567776",
           "userDisplayName": "MCHL ____"
-        },
-        {
-          "locName": "Jones Beach SP--West End",
-          "obsDt": "2026-01-21 13:55",
-          "howMany": 1,
-          "lat": 40.5835871,
-          "lng": -73.5514346,
-          "subId": "S295567775",
-          "userDisplayName": "Casey Ferio"
         }
       ],
       "totalObservations": 4,
@@ -1947,114 +1929,59 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Blue-Winged_Teal.jpg/500px-Blue-Winged_Teal.jpg"
     },
     {
-      "comName": "Common Merganser (North American)",
-      "sciName": "Mergus merganser",
-      "speciesCode": "commer1",
+      "comName": "Fox Sparrow",
+      "sciName": "Passerella iliaca",
+      "speciesCode": "foxspa",
       "observations": [
         {
-          "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
-          "obsDt": "2026-01-25 08:12",
-          "howMany": 2,
-          "lat": 40.786003,
-          "lng": -73.96196,
-          "subId": "S296196628",
-          "userDisplayName": "David Jeffrey Ringer"
-        },
-        {
-          "locName": "Central Park",
-          "obsDt": "2026-01-24 09:23",
+          "locName": "US-NY-Newfane-1682-1750 Transit Rd - 43.3330x-78.6978",
+          "obsDt": "2026-01-26 12:06",
           "howMany": 1,
-          "lat": 40.7715482,
-          "lng": -73.9724819,
-          "subId": "S296018914",
-          "userDisplayName": "David Jeffrey Ringer"
+          "lat": 43.332975,
+          "lng": -78.697807,
+          "subId": "S296425747",
+          "userDisplayName": "Joel Strong"
         },
         {
-          "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
-          "obsDt": "2026-01-23 07:56",
-          "howMany": 2,
-          "lat": 40.786003,
-          "lng": -73.96196,
-          "subId": "S295795937",
-          "userDisplayName": "David Jeffrey Ringer"
-        },
-        {
-          "locName": "Prospect Park",
-          "obsDt": "2026-01-22 09:23",
+          "locName": "US-NY-Newfane-1682-1750 Transit Rd - 43.3330x-78.6978",
+          "obsDt": "2026-01-26 12:06",
           "howMany": 1,
-          "lat": 40.6602841,
-          "lng": -73.9689534,
-          "subId": "S295668376",
-          "userDisplayName": "Dave Spangenburg"
+          "lat": 43.332975,
+          "lng": -78.697807,
+          "subId": "S296493955",
+          "userDisplayName": "Rachel  Wilson"
         },
         {
-          "locName": "Van Cortlandt Park--Southwest Zone",
-          "obsDt": "2026-01-20 04:49",
-          "howMany": 3,
-          "lat": 40.8941483,
-          "lng": -73.8929476,
-          "subId": "S295383740",
-          "userDisplayName": "Julian Batista"
+          "locName": "15 Metzger Dr Orchard Park",
+          "obsDt": "2026-01-26 12:05",
+          "howMany": 1,
+          "lat": 42.7730483,
+          "lng": -78.7220129,
+          "subId": "S296437866",
+          "userDisplayName": "Kathy O'Connor-Mullen"
+        },
+        {
+          "locName": "15 Metzger Dr Orchard Park",
+          "obsDt": "2026-01-25 08:30",
+          "howMany": 1,
+          "lat": 42.7730483,
+          "lng": -78.7220129,
+          "subId": "S296181782",
+          "userDisplayName": "Kathy O'Connor-Mullen"
+        },
+        {
+          "locName": "15 Metzger Dr Orchard Park",
+          "obsDt": "2026-01-21 12:35",
+          "howMany": 1,
+          "lat": 42.7730483,
+          "lng": -78.7220129,
+          "subId": "S295516660",
+          "userDisplayName": "Kathy O'Connor-Mullen"
         }
       ],
       "totalObservations": 5,
       "rarityRank": 69,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Mergus_merganser_merganser_2078_%285561922560%29.jpg/500px-Mergus_merganser_merganser_2078_%285561922560%29.jpg"
-    },
-    {
-      "comName": "Mute Swan",
-      "sciName": "Cygnus olor",
-      "speciesCode": "mutswa",
-      "observations": [
-        {
-          "locName": "Overlook, Rte. 89 N of Hog Hole",
-          "obsDt": "2026-01-26 14:43",
-          "howMany": 2,
-          "lat": 42.4647843,
-          "lng": -76.5246248,
-          "subId": "S296451972",
-          "userDisplayName": "Lyndon Yoder"
-        },
-        {
-          "locName": "Randalls Island--NW fields and shoreline",
-          "obsDt": "2026-01-24 12:15",
-          "howMany": 2,
-          "lat": 40.8013776,
-          "lng": -73.9233915,
-          "subId": "S296099811",
-          "userDisplayName": "Birding Spouses"
-        },
-        {
-          "locName": "Randalls Island",
-          "obsDt": "2026-01-24 07:42",
-          "howMany": 1,
-          "lat": 40.7887808,
-          "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
-        },
-        {
-          "locName": "Randalls Island",
-          "obsDt": "2026-01-24 07:42",
-          "howMany": 1,
-          "lat": 40.7887808,
-          "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
-        },
-        {
-          "locName": "Randalls Island",
-          "obsDt": "2026-01-21 08:11",
-          "howMany": 1,
-          "lat": 40.7887808,
-          "lng": -73.9219681,
-          "subId": "S295485836",
-          "userDisplayName": "Lane Theander"
-        }
-      ],
-      "totalObservations": 5,
-      "rarityRank": 70,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/CygneVaires.jpg/500px-CygneVaires.jpg"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Fox_Sparrow_-_27368714849.jpg/500px-Fox_Sparrow_-_27368714849.jpg"
     },
     {
       "comName": "Northern Shrike",
@@ -2108,7 +2035,7 @@
         }
       ],
       "totalObservations": 5,
-      "rarityRank": 71,
+      "rarityRank": 70,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Northern_Shrike%2C_Arvada%2C_Jefferson%2C_Colorado.jpg/500px-Northern_Shrike%2C_Arvada%2C_Jefferson%2C_Colorado.jpg"
     },
     {
@@ -2163,7 +2090,7 @@
         }
       ],
       "totalObservations": 5,
-      "rarityRank": 72,
+      "rarityRank": 71,
       "imageUrl": null
     },
     {
@@ -2218,7 +2145,7 @@
         }
       ],
       "totalObservations": 5,
-      "rarityRank": 73,
+      "rarityRank": 72,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/A_Br%C3%BCnnich%27s_guillemot_%28Uria_lomvia%29_with_prey.jpg/500px-A_Br%C3%BCnnich%27s_guillemot_%28Uria_lomvia%29_with_prey.jpg"
     },
     {
@@ -2259,8 +2186,8 @@
           "howMany": 1,
           "lat": 42.719342,
           "lng": -73.8774,
-          "subId": "S295515583",
-          "userDisplayName": "Mae Mayville"
+          "subId": "S295515584",
+          "userDisplayName": "Bill Mayville"
         },
         {
           "locName": "New York State Thruway N, Albany US-NY 42.71934, -73.87740",
@@ -2268,12 +2195,12 @@
           "howMany": 1,
           "lat": 42.719342,
           "lng": -73.8774,
-          "subId": "S295515584",
-          "userDisplayName": "Bill Mayville"
+          "subId": "S295515583",
+          "userDisplayName": "Mae Mayville"
         }
       ],
       "totalObservations": 5,
-      "rarityRank": 74,
+      "rarityRank": 73,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Turkey_vulture_%28Cathartes_aura%29_Orange_Walk.jpg/500px-Turkey_vulture_%28Cathartes_aura%29_Orange_Walk.jpg"
     },
     {
@@ -2337,8 +2264,72 @@
         }
       ],
       "totalObservations": 6,
-      "rarityRank": 75,
+      "rarityRank": 74,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Cassin%27s_Sparrow%2C_Peucaea_cassinii.jpg/500px-Cassin%27s_Sparrow%2C_Peucaea_cassinii.jpg"
+    },
+    {
+      "comName": "Common Merganser (North American)",
+      "sciName": "Mergus merganser",
+      "speciesCode": "commer1",
+      "observations": [
+        {
+          "locName": "Central Park",
+          "obsDt": "2026-01-26 13:50",
+          "howMany": 2,
+          "lat": 40.7715482,
+          "lng": -73.9724819,
+          "subId": "S296491902",
+          "userDisplayName": "David Jeffrey Ringer"
+        },
+        {
+          "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
+          "obsDt": "2026-01-25 08:12",
+          "howMany": 2,
+          "lat": 40.786003,
+          "lng": -73.96196,
+          "subId": "S296196628",
+          "userDisplayName": "David Jeffrey Ringer"
+        },
+        {
+          "locName": "Central Park",
+          "obsDt": "2026-01-24 09:23",
+          "howMany": 1,
+          "lat": 40.7715482,
+          "lng": -73.9724819,
+          "subId": "S296018914",
+          "userDisplayName": "David Jeffrey Ringer"
+        },
+        {
+          "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
+          "obsDt": "2026-01-23 07:56",
+          "howMany": 2,
+          "lat": 40.786003,
+          "lng": -73.96196,
+          "subId": "S295795937",
+          "userDisplayName": "David Jeffrey Ringer"
+        },
+        {
+          "locName": "Prospect Park",
+          "obsDt": "2026-01-22 09:23",
+          "howMany": 1,
+          "lat": 40.6602841,
+          "lng": -73.9689534,
+          "subId": "S295668376",
+          "userDisplayName": "Dave Spangenburg"
+        },
+        {
+          "locName": "Van Cortlandt Park--Southwest Zone",
+          "obsDt": "2026-01-20 04:49",
+          "howMany": 3,
+          "lat": 40.8941483,
+          "lng": -73.8929476,
+          "subId": "S295383740",
+          "userDisplayName": "Julian Batista"
+        }
+      ],
+      "totalObservations": 6,
+      "rarityRank": 75,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Mergus_merganser_merganser_2078_%285561922560%29.jpg/500px-Mergus_merganser_merganser_2078_%285561922560%29.jpg"
     },
     {
       "comName": "Dark-eyed Junco (Oregon)",
@@ -2405,6 +2396,70 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Junco_hyemalis_hyemalis_CT1_%28cropped%29.jpg/500px-Junco_hyemalis_hyemalis_CT1_%28cropped%29.jpg"
     },
     {
+      "comName": "Mute Swan",
+      "sciName": "Cygnus olor",
+      "speciesCode": "mutswa",
+      "observations": [
+        {
+          "locName": "Overlook, Rte. 89 N of Hog Hole",
+          "obsDt": "2026-01-26 15:41",
+          "howMany": 2,
+          "lat": 42.4647843,
+          "lng": -76.5246248,
+          "subId": "S296497802",
+          "userDisplayName": "Jay McGowan"
+        },
+        {
+          "locName": "Overlook, Rte. 89 N of Hog Hole",
+          "obsDt": "2026-01-26 14:43",
+          "howMany": 2,
+          "lat": 42.4647843,
+          "lng": -76.5246248,
+          "subId": "S296451972",
+          "userDisplayName": "Lyndon Yoder"
+        },
+        {
+          "locName": "Randalls Island--NW fields and shoreline",
+          "obsDt": "2026-01-24 12:15",
+          "howMany": 2,
+          "lat": 40.8013776,
+          "lng": -73.9233915,
+          "subId": "S296099811",
+          "userDisplayName": "Birding Spouses"
+        },
+        {
+          "locName": "Randalls Island",
+          "obsDt": "2026-01-24 07:42",
+          "howMany": 1,
+          "lat": 40.7887808,
+          "lng": -73.9219681,
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
+        },
+        {
+          "locName": "Randalls Island",
+          "obsDt": "2026-01-24 07:42",
+          "howMany": 1,
+          "lat": 40.7887808,
+          "lng": -73.9219681,
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
+        },
+        {
+          "locName": "Randalls Island",
+          "obsDt": "2026-01-21 08:11",
+          "howMany": 1,
+          "lat": 40.7887808,
+          "lng": -73.9219681,
+          "subId": "S295485836",
+          "userDisplayName": "Lane Theander"
+        }
+      ],
+      "totalObservations": 6,
+      "rarityRank": 77,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/CygneVaires.jpg/500px-CygneVaires.jpg"
+    },
+    {
       "comName": "Red Crossbill",
       "sciName": "Loxia curvirostra",
       "speciesCode": "redcro",
@@ -2415,8 +2470,8 @@
           "howMany": 5,
           "lat": 42.4270711,
           "lng": -77.9070968,
-          "subId": "S296060919",
-          "userDisplayName": "Charlie Plimpton"
+          "subId": "S296060920",
+          "userDisplayName": "Chelsea Blauvelt Plimpton"
         },
         {
           "locName": "Keeney Swamp SF--Swamp (CR 15A X Forest Road)",
@@ -2424,8 +2479,8 @@
           "howMany": 5,
           "lat": 42.4270711,
           "lng": -77.9070968,
-          "subId": "S296060920",
-          "userDisplayName": "Chelsea Blauvelt Plimpton"
+          "subId": "S296060919",
+          "userDisplayName": "Charlie Plimpton"
         },
         {
           "locName": "Danby SF--Michigan Hollow Rd., FLT Creek Area",
@@ -2465,7 +2520,7 @@
         }
       ],
       "totalObservations": 6,
-      "rarityRank": 77,
+      "rarityRank": 78,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Red_Crossbills_%28Male%29.jpg/500px-Red_Crossbills_%28Male%29.jpg"
     },
     {
@@ -2538,7 +2593,7 @@
         }
       ],
       "totalObservations": 7,
-      "rarityRank": 78,
+      "rarityRank": 79,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/500px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg"
     },
     {
@@ -2611,7 +2666,7 @@
         }
       ],
       "totalObservations": 7,
-      "rarityRank": 79,
+      "rarityRank": 80,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Black_vulture_%28Coragyps_atratus_brasiliensis%29_Peten.jpg/500px-Black_vulture_%28Coragyps_atratus_brasiliensis%29_Peten.jpg"
     },
     {
@@ -2634,6 +2689,15 @@
           "howMany": 1,
           "lat": 43.0606218,
           "lng": -78.9882132,
+          "subId": "S296265008",
+          "userDisplayName": "Kevin Rybczynski"
+        },
+        {
+          "locName": "Buckhorn Island SP",
+          "obsDt": "2026-01-25 10:45",
+          "howMany": 1,
+          "lat": 43.0606218,
+          "lng": -78.9882132,
           "subId": "S296265007",
           "userDisplayName": "Rick Thomas"
         },
@@ -2645,15 +2709,6 @@
           "lng": -78.9882132,
           "subId": "S296284849",
           "userDisplayName": "Rebecca Ploeger"
-        },
-        {
-          "locName": "Buckhorn Island SP",
-          "obsDt": "2026-01-25 10:45",
-          "howMany": 1,
-          "lat": 43.0606218,
-          "lng": -78.9882132,
-          "subId": "S296265008",
-          "userDisplayName": "Kevin Rybczynski"
         },
         {
           "locName": "Buckhorn Island SP",
@@ -2684,7 +2739,7 @@
         }
       ],
       "totalObservations": 7,
-      "rarityRank": 80,
+      "rarityRank": 81,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Snow_goose_in_Central_Park_%2833138%29.jpg/500px-Snow_goose_in_Central_Park_%2833138%29.jpg"
     },
     {
@@ -2766,7 +2821,7 @@
         }
       ],
       "totalObservations": 8,
-      "rarityRank": 81,
+      "rarityRank": 82,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pine_Grosbeak_%28Pinicola_enucleator%29_%2813667564073%29.jpg/500px-Pine_Grosbeak_%28Pinicola_enucleator%29_%2813667564073%29.jpg"
     },
     {
@@ -2848,7 +2903,7 @@
         }
       ],
       "totalObservations": 8,
-      "rarityRank": 82,
+      "rarityRank": 83,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Gallinago-delicata-002-cropped.jpg/500px-Gallinago-delicata-002-cropped.jpg"
     },
     {
@@ -2862,8 +2917,8 @@
           "howMany": 1,
           "lat": 42.436697,
           "lng": -76.496468,
-          "subId": "S296056038",
-          "userDisplayName": "Aspen Shih"
+          "subId": "S296053117",
+          "userDisplayName": "Riley Saxton"
         },
         {
           "locName": "YTWA stakeout",
@@ -2871,8 +2926,8 @@
           "howMany": 1,
           "lat": 42.436697,
           "lng": -76.496468,
-          "subId": "S296053117",
-          "userDisplayName": "Riley Saxton"
+          "subId": "S296056038",
+          "userDisplayName": "Aspen Shih"
         },
         {
           "locName": "207 Pleasant Street, Ithaca, New York, US (42.437, -76.496)",
@@ -2898,6 +2953,15 @@
           "howMany": 1,
           "lat": 42.436652,
           "lng": -76.496071,
+          "subId": "S296004194",
+          "userDisplayName": "Jay McGowan"
+        },
+        {
+          "locName": "Pleasant St., Ithaca (42.4367,-76.4961)",
+          "obsDt": "2026-01-24 11:21",
+          "howMany": 1,
+          "lat": 42.436652,
+          "lng": -76.496071,
           "subId": "S296004193",
           "userDisplayName": "Ryan Zucker"
         },
@@ -2911,15 +2975,6 @@
           "userDisplayName": "David Benvent"
         },
         {
-          "locName": "Pleasant St., Ithaca (42.4367,-76.4961)",
-          "obsDt": "2026-01-24 11:21",
-          "howMany": 1,
-          "lat": 42.436652,
-          "lng": -76.496071,
-          "subId": "S296004194",
-          "userDisplayName": "Jay McGowan"
-        },
-        {
           "locName": "207 Pleasant St, Ithaca US-NY",
           "obsDt": "2026-01-24 09:40",
           "howMany": 1,
@@ -2930,7 +2985,7 @@
         }
       ],
       "totalObservations": 8,
-      "rarityRank": 83,
+      "rarityRank": 84,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Setophaga_dominica%2C_Tisbury%2C_Martha%27s_Vineyard%2C_Massachusetts_496646966.jpg/500px-Setophaga_dominica%2C_Tisbury%2C_Martha%27s_Vineyard%2C_Massachusetts_496646966.jpg"
     },
     {
@@ -3021,7 +3076,7 @@
         }
       ],
       "totalObservations": 9,
-      "rarityRank": 84,
+      "rarityRank": 85,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Eurasian_wigeon_in_Sakai%2C_Osaka%2C_February_2016.jpg/500px-Eurasian_wigeon_in_Sakai%2C_Osaka%2C_February_2016.jpg"
     },
     {
@@ -3112,7 +3167,7 @@
         }
       ],
       "totalObservations": 9,
-      "rarityRank": 85,
+      "rarityRank": 86,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Drake_Greater_scaup_%28Aythya_marila%29_Barnegat_Inlet%2C_New_Jersey%2C_USA.jpg/500px-Drake_Greater_scaup_%28Aythya_marila%29_Barnegat_Inlet%2C_New_Jersey%2C_USA.jpg"
     },
     {
@@ -3203,7 +3258,7 @@
         }
       ],
       "totalObservations": 9,
-      "rarityRank": 86,
+      "rarityRank": 87,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pine_warbler_%2890070%29.jpg/500px-Pine_warbler_%2890070%29.jpg"
     },
     {
@@ -3244,8 +3299,8 @@
           "howMany": 2,
           "lat": 42.9349353,
           "lng": -78.9072847,
-          "subId": "S296091047",
-          "userDisplayName": "Rebecca Ploeger"
+          "subId": "S296090758",
+          "userDisplayName": "Kevin Rybczynski"
         },
         {
           "locName": "Unity Island--Pier",
@@ -3253,8 +3308,8 @@
           "howMany": 2,
           "lat": 42.9349353,
           "lng": -78.9072847,
-          "subId": "S296090758",
-          "userDisplayName": "Kevin Rybczynski"
+          "subId": "S296091047",
+          "userDisplayName": "Rebecca Ploeger"
         },
         {
           "locName": "Unity Island--Pier",
@@ -3312,7 +3367,7 @@
         }
       ],
       "totalObservations": 11,
-      "rarityRank": 87,
+      "rarityRank": 88,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Drake_Harlequin_duck_%28Histrionicus_histrionicus%29_perched_on_a_rock_in_the_Barnegat_Inlet%2C_New_Jersey%2C_USA_%28cropped%29.jpg/500px-Drake_Harlequin_duck_%28Histrionicus_histrionicus%29_perched_on_a_rock_in_the_Barnegat_Inlet%2C_New_Jersey%2C_USA_%28cropped%29.jpg"
     },
     {
@@ -3421,7 +3476,7 @@
         }
       ],
       "totalObservations": 11,
-      "rarityRank": 88,
+      "rarityRank": 89,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Killdeer_Heislerville.png/500px-Killdeer_Heislerville.png"
     },
     {
@@ -3530,7 +3585,7 @@
         }
       ],
       "totalObservations": 11,
-      "rarityRank": 89,
+      "rarityRank": 90,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Ross%27s_Goose_%28Chen_rossii%29_%2823321411711%29.jpg/500px-Ross%27s_Goose_%28Chen_rossii%29_%2823321411711%29.jpg"
     },
     {
@@ -3648,7 +3703,7 @@
         }
       ],
       "totalObservations": 12,
-      "rarityRank": 90,
+      "rarityRank": 91,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Orange-crowned_warbler1.jpg/500px-Orange-crowned_warbler1.jpg"
     },
     {
@@ -3682,6 +3737,15 @@
           "lng": -78.773674,
           "subId": "S296388251",
           "userDisplayName": "Lynn Johnson"
+        },
+        {
+          "locName": "Pine Drive, Fredonia, NY",
+          "obsDt": "2026-01-26 08:00",
+          "howMany": 1,
+          "lat": 42.4315659,
+          "lng": -79.3295288,
+          "subId": "S296490988",
+          "userDisplayName": "Joanne Goetz"
         },
         {
           "locName": "Private Residence",
@@ -3774,8 +3838,8 @@
           "userDisplayName": "Lynn Johnson"
         }
       ],
-      "totalObservations": 13,
-      "rarityRank": 91,
+      "totalObservations": 14,
+      "rarityRank": 92,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/20241004_eastern_towhee_pleasant_valley_PD207764.jpg/500px-20241004_eastern_towhee_pleasant_valley_PD207764.jpg"
     },
     {
@@ -3906,8 +3970,8 @@
           "howMany": 1,
           "lat": 40.6392421,
           "lng": -73.8730258,
-          "subId": "S295567793",
-          "userDisplayName": "MCHL ____"
+          "subId": "S295567792",
+          "userDisplayName": "Casey Ferio"
         },
         {
           "locName": "Shirley Chisholm SP (Pennsylvania Ave. Landfill)",
@@ -3915,8 +3979,8 @@
           "howMany": 1,
           "lat": 40.6392421,
           "lng": -73.8730258,
-          "subId": "S295567792",
-          "userDisplayName": "Casey Ferio"
+          "subId": "S295567793",
+          "userDisplayName": "MCHL ____"
         },
         {
           "locName": "Gardiners Island, East Hampton US-NY (41.0602,-72.0965)",
@@ -3929,7 +3993,7 @@
         }
       ],
       "totalObservations": 16,
-      "rarityRank": 92,
+      "rarityRank": 93,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Fjellv%C3%A5k_%28Buteo_lagopus%29_%28Rough-legged_Buzzard%29_%28Fj%C3%A4llvr%C3%A5k%29.jpg/500px-Fjellv%C3%A5k_%28Buteo_lagopus%29_%28Rough-legged_Buzzard%29_%28Fj%C3%A4llvr%C3%A5k%29.jpg"
     },
     {
@@ -3979,8 +4043,8 @@
           "howMany": 2,
           "lat": 42.2684747,
           "lng": -76.5388437,
-          "subId": "S295951841",
-          "userDisplayName": "Melissa Mancuso"
+          "subId": "S295951838",
+          "userDisplayName": "Jon Corcoran"
         },
         {
           "locName": "Dirty Bird Ranch (Private)",
@@ -3988,8 +4052,8 @@
           "howMany": 2,
           "lat": 42.2684747,
           "lng": -76.5388437,
-          "subId": "S295951838",
-          "userDisplayName": "Jon Corcoran"
+          "subId": "S295951841",
+          "userDisplayName": "Melissa Mancuso"
         },
         {
           "locName": "Newland Park Jamestown",
@@ -4033,8 +4097,8 @@
           "howMany": 2,
           "lat": 42.2684747,
           "lng": -76.5388437,
-          "subId": "S295851612",
-          "userDisplayName": "Jon Corcoran"
+          "subId": "S295851614",
+          "userDisplayName": "Melissa Mancuso"
         },
         {
           "locName": "Dirty Bird Ranch (Private)",
@@ -4042,16 +4106,7 @@
           "howMany": 2,
           "lat": 42.2684747,
           "lng": -76.5388437,
-          "subId": "S295851614",
-          "userDisplayName": "Melissa Mancuso"
-        },
-        {
-          "locName": "Dirty Bird Ranch (Private)",
-          "obsDt": "2026-01-20 12:15",
-          "howMany": 1,
-          "lat": 42.2684747,
-          "lng": -76.5388437,
-          "subId": "S295452240",
+          "subId": "S295851612",
           "userDisplayName": "Jon Corcoran"
         },
         {
@@ -4062,6 +4117,15 @@
           "lng": -76.5388437,
           "subId": "S295452243",
           "userDisplayName": "Melissa Mancuso"
+        },
+        {
+          "locName": "Dirty Bird Ranch (Private)",
+          "obsDt": "2026-01-20 12:15",
+          "howMany": 1,
+          "lat": 42.2684747,
+          "lng": -76.5388437,
+          "subId": "S295452240",
+          "userDisplayName": "Jon Corcoran"
         },
         {
           "locName": "Newland Park Jamestown",
@@ -4083,7 +4147,7 @@
         }
       ],
       "totalObservations": 16,
-      "rarityRank": 93,
+      "rarityRank": 94,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Yellow-bellied_sapsucker_in_CP_%2840484%29.jpg/500px-Yellow-bellied_sapsucker_in_CP_%2840484%29.jpg"
     },
     {
@@ -4246,7 +4310,7 @@
         }
       ],
       "totalObservations": 17,
-      "rarityRank": 94,
+      "rarityRank": 95,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Greater_white-fronted_goose_in_flight-1045.jpg/500px-Greater_white-fronted_goose_in_flight-1045.jpg"
     },
     {
@@ -4409,7 +4473,7 @@
         }
       ],
       "totalObservations": 17,
-      "rarityRank": 95,
+      "rarityRank": 96,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Carpodacus_purpureus_CT3.jpg/500px-Carpodacus_purpureus_CT3.jpg"
     },
     {
@@ -4581,180 +4645,8 @@
         }
       ],
       "totalObservations": 18,
-      "rarityRank": 96,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/AleutianCanadaGoose2.jpg/413px-AleutianCanadaGoose2.jpg"
-    },
-    {
-      "comName": "Chipping Sparrow",
-      "sciName": "Spizella passerina",
-      "speciesCode": "chispa",
-      "observations": [
-        {
-          "locName": "Windcrest Drive, Manorville",
-          "obsDt": "2026-01-26 08:16",
-          "howMany": 2,
-          "lat": 40.8384981,
-          "lng": -72.7732284,
-          "subId": "S296384717",
-          "userDisplayName": "Steve Biasetti"
-        },
-        {
-          "locName": "Home",
-          "obsDt": "2026-01-25 08:29",
-          "howMany": 1,
-          "lat": 43.7835508,
-          "lng": -75.4849393,
-          "subId": "S296317996",
-          "userDisplayName": "Noah Cross"
-        },
-        {
-          "locName": "16 Coronet Rd, Home, Yonkers US-NY",
-          "obsDt": "2026-01-25 08:13",
-          "howMany": 1,
-          "lat": 40.9585,
-          "lng": -73.848675,
-          "subId": "S296171840",
-          "userDisplayName": "Michael Bochnik"
-        },
-        {
-          "locName": "Windcrest Drive, Manorville",
-          "obsDt": "2026-01-25 07:52",
-          "howMany": 2,
-          "lat": 40.8384981,
-          "lng": -72.7732284,
-          "subId": "S296166165",
-          "userDisplayName": "Steve Biasetti"
-        },
-        {
-          "locName": "Windcrest Drive, Manorville",
-          "obsDt": "2026-01-24 08:42",
-          "howMany": 3,
-          "lat": 40.8384981,
-          "lng": -72.7732284,
-          "subId": "S295959198",
-          "userDisplayName": "Steve Biasetti"
-        },
-        {
-          "locName": "Green-Wood Cemetery, Brooklyn",
-          "obsDt": "2026-01-24 08:30",
-          "howMany": 1,
-          "lat": 40.6523083,
-          "lng": -73.9904281,
-          "subId": "S296034273",
-          "userDisplayName": "matt bourke"
-        },
-        {
-          "locName": "Brooklyn Botanic Garden",
-          "obsDt": "2026-01-23 11:30",
-          "howMany": 1,
-          "lat": 40.6680222,
-          "lng": -73.96367,
-          "subId": "S296244000",
-          "userDisplayName": "Tina Alleva"
-        },
-        {
-          "locName": "Brooklyn Botanic Garden",
-          "obsDt": "2026-01-23 11:30",
-          "howMany": 1,
-          "lat": 40.6680222,
-          "lng": -73.96367,
-          "subId": "S295850472",
-          "userDisplayName": "Indigo Goodson"
-        },
-        {
-          "locName": "Brooklyn Botanic Garden",
-          "obsDt": "2026-01-23 10:34",
-          "howMany": 1,
-          "lat": 40.6680222,
-          "lng": -73.96367,
-          "subId": "S295827845",
-          "userDisplayName": "Marleny Rafferty"
-        },
-        {
-          "locName": "Brooklyn Botanic Garden",
-          "obsDt": "2026-01-23 10:21",
-          "howMany": 1,
-          "lat": 40.6680222,
-          "lng": -73.96367,
-          "subId": "S295827813",
-          "userDisplayName": "Chris Miller"
-        },
-        {
-          "locName": "Green-Wood Cemetery, Brooklyn",
-          "obsDt": "2026-01-23 09:10",
-          "howMany": 1,
-          "lat": 40.6523083,
-          "lng": -73.9904281,
-          "subId": "S295824481",
-          "userDisplayName": "Z ."
-        },
-        {
-          "locName": "Green-Wood Cemetery, Brooklyn",
-          "obsDt": "2026-01-23 08:03",
-          "howMany": 1,
-          "lat": 40.6523083,
-          "lng": -73.9904281,
-          "subId": "S295799665",
-          "userDisplayName": "Rook Schucker Mallo"
-        },
-        {
-          "locName": "Green-Wood Cemetery, Brooklyn",
-          "obsDt": "2026-01-22 13:14",
-          "howMany": 1,
-          "lat": 40.6523083,
-          "lng": -73.9904281,
-          "subId": "S295715107",
-          "userDisplayName": "Susie Dippel"
-        },
-        {
-          "locName": "Green-Wood Cemetery, Brooklyn",
-          "obsDt": "2026-01-22 12:34",
-          "howMany": 1,
-          "lat": 40.6523083,
-          "lng": -73.9904281,
-          "subId": "S295691991",
-          "userDisplayName": "MCHL ____"
-        },
-        {
-          "locName": "Wing Watch",
-          "obsDt": "2026-01-21 13:20",
-          "howMany": 1,
-          "lat": 41.2009206,
-          "lng": -74.0335541,
-          "subId": "S295535933",
-          "userDisplayName": "Gene Herskovics"
-        },
-        {
-          "locName": "Green-Wood Cemetery, Brooklyn",
-          "obsDt": "2026-01-21 08:05",
-          "howMany": 1,
-          "lat": 40.6523083,
-          "lng": -73.9904281,
-          "subId": "S295527007",
-          "userDisplayName": "matt bourke"
-        },
-        {
-          "locName": "Windcrest Drive, Manorville",
-          "obsDt": "2026-01-21 07:21",
-          "howMany": 1,
-          "lat": 40.8384981,
-          "lng": -72.7732284,
-          "subId": "S295468746",
-          "userDisplayName": "Steve Biasetti"
-        },
-        {
-          "locName": "Zygala South Salem home",
-          "obsDt": "2026-01-20 10:00",
-          "howMany": 1,
-          "lat": 41.2439616,
-          "lng": -73.5235977,
-          "subId": "S295349743",
-          "userDisplayName": "Joseph Zygala"
-        }
-      ],
-      "totalObservations": 18,
       "rarityRank": 97,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Spizella-passerina-015_edit.jpg/500px-Spizella-passerina-015_edit.jpg"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/AleutianCanadaGoose2.jpg/413px-AleutianCanadaGoose2.jpg"
     },
     {
       "comName": "Eastern Bluebird",
@@ -4767,8 +4659,8 @@
           "howMany": 4,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296060841",
-          "userDisplayName": "D K"
+          "subId": "S296060839",
+          "userDisplayName": "Ant Tab"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -4776,8 +4668,8 @@
           "howMany": 4,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296060839",
-          "userDisplayName": "Ant Tab"
+          "subId": "S296060841",
+          "userDisplayName": "D K"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -4803,8 +4695,8 @@
           "howMany": 5,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296044437",
-          "userDisplayName": "Daisy Paul"
+          "subId": "S296044439",
+          "userDisplayName": "Peter Paul"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -4812,8 +4704,8 @@
           "howMany": 5,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296044439",
-          "userDisplayName": "Peter Paul"
+          "subId": "S296044437",
+          "userDisplayName": "Daisy Paul"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -4839,8 +4731,8 @@
           "howMany": 5,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296042627",
-          "userDisplayName": "MCHL ____"
+          "subId": "S296042629",
+          "userDisplayName": "chel sea"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -4848,8 +4740,8 @@
           "howMany": 5,
           "lat": 40.5923453,
           "lng": -73.8914328,
-          "subId": "S296042629",
-          "userDisplayName": "chel sea"
+          "subId": "S296042627",
+          "userDisplayName": "MCHL ____"
         },
         {
           "locName": "Floyd Bennett Field",
@@ -5029,8 +4921,8 @@
           "howMany": 4,
           "lat": 40.5942621,
           "lng": -74.0017768,
-          "subId": "S295557222",
-          "userDisplayName": "Jo Ann Preston"
+          "subId": "S295557221",
+          "userDisplayName": "Tom Preston"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -5038,8 +4930,8 @@
           "howMany": 4,
           "lat": 40.5942621,
           "lng": -74.0017768,
-          "subId": "S295557221",
-          "userDisplayName": "Tom Preston"
+          "subId": "S295557222",
+          "userDisplayName": "Jo Ann Preston"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -5065,8 +4957,8 @@
           "howMany": 1,
           "lat": 40.9773181,
           "lng": -73.1186217,
-          "subId": "S295576503",
-          "userDisplayName": "Peter Osswald"
+          "subId": "S295545964",
+          "userDisplayName": "Four Harbors Audubon Society NY"
         },
         {
           "locName": "Old Field Point and Lighthouse",
@@ -5074,8 +4966,8 @@
           "howMany": 1,
           "lat": 40.9773181,
           "lng": -73.1186217,
-          "subId": "S295545964",
-          "userDisplayName": "Four Harbors Audubon Society NY"
+          "subId": "S295576503",
+          "userDisplayName": "Peter Osswald"
         },
         {
           "locName": "Bellport Bay Yacht Club",
@@ -5138,8 +5030,8 @@
           "howMany": 1,
           "lat": 40.7129149,
           "lng": -73.1650615,
-          "subId": "S296011615",
-          "userDisplayName": "Lisa Wollerstein"
+          "subId": "S296011617",
+          "userDisplayName": "Scott Whitmore"
         },
         {
           "locName": "Heckscher SP, East Islip",
@@ -5147,8 +5039,8 @@
           "howMany": 1,
           "lat": 40.7129149,
           "lng": -73.1650615,
-          "subId": "S296011617",
-          "userDisplayName": "Scott Whitmore"
+          "subId": "S296011615",
+          "userDisplayName": "Lisa Wollerstein"
         },
         {
           "locName": "Heckscher SP, East Islip",
@@ -5192,8 +5084,8 @@
           "howMany": 1,
           "lat": 40.7069369,
           "lng": -73.1762438,
-          "subId": "S295840447",
-          "userDisplayName": "Carol Brand"
+          "subId": "S295809660",
+          "userDisplayName": "Joanna Watson"
         },
         {
           "locName": "Heckscher SP--Field 5",
@@ -5201,8 +5093,8 @@
           "howMany": 1,
           "lat": 40.7069369,
           "lng": -73.1762438,
-          "subId": "S295809660",
-          "userDisplayName": "Joanna Watson"
+          "subId": "S295840447",
+          "userDisplayName": "Carol Brand"
         },
         {
           "locName": "Heckscher SP--Field 5",
@@ -5292,8 +5184,8 @@
           "howMany": 4,
           "lat": 40.7102149,
           "lng": -73.3287406,
-          "subId": "S296464599",
-          "userDisplayName": "Ken Feustel"
+          "subId": "S296471729",
+          "userDisplayName": "Suzy Feustel"
         },
         {
           "locName": "Southards Pond Park",
@@ -5301,8 +5193,8 @@
           "howMany": 4,
           "lat": 40.7102149,
           "lng": -73.3287406,
-          "subId": "S296471729",
-          "userDisplayName": "Suzy Feustel"
+          "subId": "S296464599",
+          "userDisplayName": "Ken Feustel"
         },
         {
           "locName": "1947 Scuttle Hole Rd, Bridgehampton US-NY (40.9595,-72.3067)",
@@ -5482,8 +5374,8 @@
           "howMany": 1,
           "lat": 43.2345314,
           "lng": -77.5347137,
-          "subId": "S296093847",
-          "userDisplayName": "Kent Millham"
+          "subId": "S296283669",
+          "userDisplayName": "Susan Roberts"
         },
         {
           "locName": "Irondequoit Bay outlet: pier, beach and boat ramp",
@@ -5491,17 +5383,8 @@
           "howMany": 1,
           "lat": 43.2345314,
           "lng": -77.5347137,
-          "subId": "S296283669",
-          "userDisplayName": "Susan Roberts"
-        },
-        {
-          "locName": "Bayview Marina, Rochester",
-          "obsDt": "2026-01-24 14:26",
-          "howMany": 2,
-          "lat": 43.1939256,
-          "lng": -77.5326873,
-          "subId": "S296068772",
-          "userDisplayName": "Michael Rizzo"
+          "subId": "S296093847",
+          "userDisplayName": "Kent Millham"
         },
         {
           "locName": "Bayview Marina, Rochester",
@@ -5511,6 +5394,15 @@
           "lng": -77.5326873,
           "subId": "S296041832",
           "userDisplayName": "Mary Jane Pelton"
+        },
+        {
+          "locName": "Bayview Marina, Rochester",
+          "obsDt": "2026-01-24 14:26",
+          "howMany": 2,
+          "lat": 43.1939256,
+          "lng": -77.5326873,
+          "subId": "S296068772",
+          "userDisplayName": "Michael Rizzo"
         },
         {
           "locName": "Irondequoit Bay outlet: pier, beach and boat ramp",
@@ -5545,8 +5437,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295735307",
-          "userDisplayName": "Tom Moran"
+          "subId": "S295686689",
+          "userDisplayName": "Patricia Aitken"
         },
         {
           "locName": "Sylvan Lake",
@@ -5554,8 +5446,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295686689",
-          "userDisplayName": "Patricia Aitken"
+          "subId": "S295735307",
+          "userDisplayName": "Tom Moran"
         },
         {
           "locName": "Sylvan Lake",
@@ -5617,8 +5509,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S296087931",
-          "userDisplayName": "John Ward"
+          "subId": "S295377263",
+          "userDisplayName": "Susan Logan Ward 🦉"
         },
         {
           "locName": "Sylvan Lake",
@@ -5626,8 +5518,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295377263",
-          "userDisplayName": "Susan Logan Ward 🦉"
+          "subId": "S296087931",
+          "userDisplayName": "John Ward"
         },
         {
           "locName": "Sylvan Lake",
@@ -5642,6 +5534,196 @@
       "totalObservations": 19,
       "rarityRank": 102,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Trumpeter_swans_in_winter.jpg/500px-Trumpeter_swans_in_winter.jpg"
+    },
+    {
+      "comName": "Chipping Sparrow",
+      "sciName": "Spizella passerina",
+      "speciesCode": "chispa",
+      "observations": [
+        {
+          "locName": "Calvert Vaux Park (Dreier-Offerman Park)",
+          "obsDt": "2026-01-26 16:00",
+          "howMany": 1,
+          "lat": 40.5848762,
+          "lng": -73.9945752,
+          "subId": "S296487013",
+          "userDisplayName": "Anonymous eBirder"
+        },
+        {
+          "locName": "Six Diamonds Ballfields",
+          "obsDt": "2026-01-26 16:00",
+          "howMany": 1,
+          "lat": 40.5830692,
+          "lng": -73.9896828,
+          "subId": "S296487028",
+          "userDisplayName": "Anonymous eBirder"
+        },
+        {
+          "locName": "Windcrest Drive, Manorville",
+          "obsDt": "2026-01-26 08:16",
+          "howMany": 2,
+          "lat": 40.8384981,
+          "lng": -72.7732284,
+          "subId": "S296384717",
+          "userDisplayName": "Steve Biasetti"
+        },
+        {
+          "locName": "Home",
+          "obsDt": "2026-01-25 08:29",
+          "howMany": 1,
+          "lat": 43.7835508,
+          "lng": -75.4849393,
+          "subId": "S296317996",
+          "userDisplayName": "Noah Cross"
+        },
+        {
+          "locName": "16 Coronet Rd, Home, Yonkers US-NY",
+          "obsDt": "2026-01-25 08:13",
+          "howMany": 1,
+          "lat": 40.9585,
+          "lng": -73.848675,
+          "subId": "S296171840",
+          "userDisplayName": "Michael Bochnik"
+        },
+        {
+          "locName": "Windcrest Drive, Manorville",
+          "obsDt": "2026-01-25 07:52",
+          "howMany": 2,
+          "lat": 40.8384981,
+          "lng": -72.7732284,
+          "subId": "S296166165",
+          "userDisplayName": "Steve Biasetti"
+        },
+        {
+          "locName": "Windcrest Drive, Manorville",
+          "obsDt": "2026-01-24 08:42",
+          "howMany": 3,
+          "lat": 40.8384981,
+          "lng": -72.7732284,
+          "subId": "S295959198",
+          "userDisplayName": "Steve Biasetti"
+        },
+        {
+          "locName": "Green-Wood Cemetery, Brooklyn",
+          "obsDt": "2026-01-24 08:30",
+          "howMany": 1,
+          "lat": 40.6523083,
+          "lng": -73.9904281,
+          "subId": "S296034273",
+          "userDisplayName": "matt bourke"
+        },
+        {
+          "locName": "Brooklyn Botanic Garden",
+          "obsDt": "2026-01-23 11:30",
+          "howMany": 1,
+          "lat": 40.6680222,
+          "lng": -73.96367,
+          "subId": "S296244000",
+          "userDisplayName": "Tina Alleva"
+        },
+        {
+          "locName": "Brooklyn Botanic Garden",
+          "obsDt": "2026-01-23 11:30",
+          "howMany": 1,
+          "lat": 40.6680222,
+          "lng": -73.96367,
+          "subId": "S295850472",
+          "userDisplayName": "Indigo Goodson"
+        },
+        {
+          "locName": "Brooklyn Botanic Garden",
+          "obsDt": "2026-01-23 10:34",
+          "howMany": 1,
+          "lat": 40.6680222,
+          "lng": -73.96367,
+          "subId": "S295827845",
+          "userDisplayName": "Marleny Rafferty"
+        },
+        {
+          "locName": "Brooklyn Botanic Garden",
+          "obsDt": "2026-01-23 10:21",
+          "howMany": 1,
+          "lat": 40.6680222,
+          "lng": -73.96367,
+          "subId": "S295827813",
+          "userDisplayName": "Chris Miller"
+        },
+        {
+          "locName": "Green-Wood Cemetery, Brooklyn",
+          "obsDt": "2026-01-23 09:10",
+          "howMany": 1,
+          "lat": 40.6523083,
+          "lng": -73.9904281,
+          "subId": "S295824481",
+          "userDisplayName": "Z ."
+        },
+        {
+          "locName": "Green-Wood Cemetery, Brooklyn",
+          "obsDt": "2026-01-23 08:03",
+          "howMany": 1,
+          "lat": 40.6523083,
+          "lng": -73.9904281,
+          "subId": "S295799665",
+          "userDisplayName": "Rook Schucker Mallo"
+        },
+        {
+          "locName": "Green-Wood Cemetery, Brooklyn",
+          "obsDt": "2026-01-22 13:14",
+          "howMany": 1,
+          "lat": 40.6523083,
+          "lng": -73.9904281,
+          "subId": "S295715107",
+          "userDisplayName": "Susie Dippel"
+        },
+        {
+          "locName": "Green-Wood Cemetery, Brooklyn",
+          "obsDt": "2026-01-22 12:34",
+          "howMany": 1,
+          "lat": 40.6523083,
+          "lng": -73.9904281,
+          "subId": "S295691991",
+          "userDisplayName": "MCHL ____"
+        },
+        {
+          "locName": "Wing Watch",
+          "obsDt": "2026-01-21 13:20",
+          "howMany": 1,
+          "lat": 41.2009206,
+          "lng": -74.0335541,
+          "subId": "S295535933",
+          "userDisplayName": "Gene Herskovics"
+        },
+        {
+          "locName": "Green-Wood Cemetery, Brooklyn",
+          "obsDt": "2026-01-21 08:05",
+          "howMany": 1,
+          "lat": 40.6523083,
+          "lng": -73.9904281,
+          "subId": "S295527007",
+          "userDisplayName": "matt bourke"
+        },
+        {
+          "locName": "Windcrest Drive, Manorville",
+          "obsDt": "2026-01-21 07:21",
+          "howMany": 1,
+          "lat": 40.8384981,
+          "lng": -72.7732284,
+          "subId": "S295468746",
+          "userDisplayName": "Steve Biasetti"
+        },
+        {
+          "locName": "Zygala South Salem home",
+          "obsDt": "2026-01-20 10:00",
+          "howMany": 1,
+          "lat": 41.2439616,
+          "lng": -73.5235977,
+          "subId": "S295349743",
+          "userDisplayName": "Joseph Zygala"
+        }
+      ],
+      "totalObservations": 20,
+      "rarityRank": 103,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Spizella-passerina-015_edit.jpg/500px-Spizella-passerina-015_edit.jpg"
     },
     {
       "comName": "Lesser Black-backed Gull",
@@ -5681,8 +5763,8 @@
           "howMany": 1,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296070853",
-          "userDisplayName": "Tim Healy"
+          "subId": "S296071545",
+          "userDisplayName": "Adam Cunningham"
         },
         {
           "locName": "Randalls Island",
@@ -5690,17 +5772,8 @@
           "howMany": 1,
           "lat": 40.7887808,
           "lng": -73.9219681,
-          "subId": "S296071545",
-          "userDisplayName": "Adam Cunningham"
-        },
-        {
-          "locName": "Ceasar's Bay Bazaar",
-          "obsDt": "2026-01-22 14:10",
-          "howMany": 1,
-          "lat": 40.5942621,
-          "lng": -74.0017768,
-          "subId": "S295700089",
-          "userDisplayName": "The Big Laskowski"
+          "subId": "S296070853",
+          "userDisplayName": "Tim Healy"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -5710,6 +5783,15 @@
           "lng": -74.0017768,
           "subId": "S295684910",
           "userDisplayName": "karen o'hearn"
+        },
+        {
+          "locName": "Ceasar's Bay Bazaar",
+          "obsDt": "2026-01-22 14:10",
+          "howMany": 1,
+          "lat": 40.5942621,
+          "lng": -74.0017768,
+          "subId": "S295700089",
+          "userDisplayName": "The Big Laskowski"
         },
         {
           "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
@@ -5798,8 +5880,8 @@
           "howMany": 1,
           "lat": 40.5942621,
           "lng": -74.0017768,
-          "subId": "S295557222",
-          "userDisplayName": "Jo Ann Preston"
+          "subId": "S295557221",
+          "userDisplayName": "Tom Preston"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -5807,8 +5889,8 @@
           "howMany": 1,
           "lat": 40.5942621,
           "lng": -74.0017768,
-          "subId": "S295557221",
-          "userDisplayName": "Tom Preston"
+          "subId": "S295557222",
+          "userDisplayName": "Jo Ann Preston"
         },
         {
           "locName": "Ceasar's Bay Bazaar",
@@ -5830,7 +5912,7 @@
         }
       ],
       "totalObservations": 20,
-      "rarityRank": 103,
+      "rarityRank": 104,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Larus-fuscus-taxbox.jpg/500px-Larus-fuscus-taxbox.jpg"
     },
     {
@@ -5838,6 +5920,15 @@
       "sciName": "Bucephala islandica",
       "speciesCode": "bargol",
       "observations": [
+        {
+          "locName": "New Croton Reservoir",
+          "obsDt": "2026-01-26 15:09",
+          "howMany": 1,
+          "lat": 41.2380159,
+          "lng": -73.8294039,
+          "subId": "S296498635",
+          "userDisplayName": "Charlie Roberto"
+        },
         {
           "locName": "Croton Gorge Park--Croton Dam Overlook",
           "obsDt": "2026-01-26 15:01",
@@ -5871,8 +5962,8 @@
           "howMany": 1,
           "lat": 41.2265384,
           "lng": -73.8558,
-          "subId": "S296444512",
-          "userDisplayName": "Sharon Weiss"
+          "subId": "S295980634",
+          "userDisplayName": "Anne Swaim"
         },
         {
           "locName": "Croton Gorge Park--Croton Dam Overlook",
@@ -5889,8 +5980,8 @@
           "howMany": 1,
           "lat": 41.2265384,
           "lng": -73.8558,
-          "subId": "S296306525",
-          "userDisplayName": "Patrick Harty"
+          "subId": "S296444512",
+          "userDisplayName": "Sharon Weiss"
         },
         {
           "locName": "Croton Gorge Park--Croton Dam Overlook",
@@ -5898,8 +5989,8 @@
           "howMany": 1,
           "lat": 41.2265384,
           "lng": -73.8558,
-          "subId": "S295980634",
-          "userDisplayName": "Anne Swaim"
+          "subId": "S296306525",
+          "userDisplayName": "Patrick Harty"
         },
         {
           "locName": "Croton Gorge Park--Croton Dam Overlook",
@@ -5988,8 +6079,8 @@
           "howMany": 1,
           "lat": 41.2380159,
           "lng": -73.8294039,
-          "subId": "S295498274",
-          "userDisplayName": "Matthew Strobino"
+          "subId": "S295507603",
+          "userDisplayName": "Barbara Strobino"
         },
         {
           "locName": "New Croton Reservoir",
@@ -5997,8 +6088,8 @@
           "howMany": 1,
           "lat": 41.2380159,
           "lng": -73.8294039,
-          "subId": "S295507603",
-          "userDisplayName": "Barbara Strobino"
+          "subId": "S295498274",
+          "userDisplayName": "Matthew Strobino"
         },
         {
           "locName": "Sunken Meadow SP",
@@ -6046,8 +6137,8 @@
           "userDisplayName": "michael vedder"
         }
       ],
-      "totalObservations": 23,
-      "rarityRank": 104,
+      "totalObservations": 24,
+      "rarityRank": 105,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Barrows.goldeneye.male.010107.arp.jpg/500px-Barrows.goldeneye.male.010107.arp.jpg"
     },
     {
@@ -6056,13 +6147,13 @@
       "speciesCode": "tufduc",
       "observations": [
         {
-          "locName": "Sylvan Lake",
-          "obsDt": "2026-01-24 15:00",
+          "locName": "Overlook, Rte. 89 N of Hog Hole",
+          "obsDt": "2026-01-26 15:41",
           "howMany": 1,
-          "lat": 41.6086902,
-          "lng": -73.7405241,
-          "subId": "S296113144",
-          "userDisplayName": "Ryan Mandelbaum"
+          "lat": 42.4647843,
+          "lng": -76.5246248,
+          "subId": "S296497802",
+          "userDisplayName": "Jay McGowan"
         },
         {
           "locName": "Sylvan Lake",
@@ -6090,6 +6181,15 @@
           "lng": -73.7405241,
           "subId": "S296102679",
           "userDisplayName": "Jeremy Thorp"
+        },
+        {
+          "locName": "Sylvan Lake",
+          "obsDt": "2026-01-24 15:00",
+          "howMany": 1,
+          "lat": 41.6086902,
+          "lng": -73.7405241,
+          "subId": "S296113144",
+          "userDisplayName": "Ryan Mandelbaum"
         },
         {
           "locName": "Overlook, Rte. 89 N of Hog Hole",
@@ -6169,8 +6269,8 @@
           "howMany": 1,
           "lat": 42.4618954,
           "lng": -76.5190244,
-          "subId": "S296015252",
-          "userDisplayName": "Diane Stonestreet"
+          "subId": "S296015253",
+          "userDisplayName": "Colby Merrill"
         },
         {
           "locName": "Hog Hole (Allan H. Treman State Marine Park)",
@@ -6178,17 +6278,8 @@
           "howMany": 1,
           "lat": 42.4618954,
           "lng": -76.5190244,
-          "subId": "S296015253",
-          "userDisplayName": "Colby Merrill"
-        },
-        {
-          "locName": "Overlook, Rte. 89 N of Hog Hole",
-          "obsDt": "2026-01-24 10:22",
-          "howMany": 1,
-          "lat": 42.4647843,
-          "lng": -76.5246248,
-          "subId": "S296032704",
-          "userDisplayName": "Jay McGowan"
+          "subId": "S296015252",
+          "userDisplayName": "Diane Stonestreet"
         },
         {
           "locName": "Overlook, Rte. 89 N of Hog Hole",
@@ -6198,6 +6289,15 @@
           "lng": -76.5246248,
           "subId": "S296088256",
           "userDisplayName": "Ryan Zucker"
+        },
+        {
+          "locName": "Overlook, Rte. 89 N of Hog Hole",
+          "obsDt": "2026-01-24 10:22",
+          "howMany": 1,
+          "lat": 42.4647843,
+          "lng": -76.5246248,
+          "subId": "S296032704",
+          "userDisplayName": "Jay McGowan"
         },
         {
           "locName": "Overlook, Rte. 89 N of Hog Hole",
@@ -6268,8 +6368,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295686689",
-          "userDisplayName": "Patricia Aitken"
+          "subId": "S295735307",
+          "userDisplayName": "Tom Moran"
         },
         {
           "locName": "Sylvan Lake",
@@ -6277,8 +6377,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295735307",
-          "userDisplayName": "Tom Moran"
+          "subId": "S295686689",
+          "userDisplayName": "Patricia Aitken"
         },
         {
           "locName": "Sylvan Lake",
@@ -6322,8 +6422,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S296087931",
-          "userDisplayName": "John Ward"
+          "subId": "S295377263",
+          "userDisplayName": "Susan Logan Ward 🦉"
         },
         {
           "locName": "Sylvan Lake",
@@ -6331,8 +6431,8 @@
           "howMany": 1,
           "lat": 41.6086902,
           "lng": -73.7405241,
-          "subId": "S295377263",
-          "userDisplayName": "Susan Logan Ward 🦉"
+          "subId": "S296087931",
+          "userDisplayName": "John Ward"
         },
         {
           "locName": "Sylvan Lake",
@@ -6344,8 +6444,8 @@
           "userDisplayName": "Gary Chapin"
         }
       ],
-      "totalObservations": 32,
-      "rarityRank": 105,
+      "totalObservations": 33,
+      "rarityRank": 106,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tufted_Duck_09_05_2025_02.jpg/500px-Tufted_Duck_09_05_2025_02.jpg"
     },
     {
@@ -6489,15 +6589,6 @@
           "userDisplayName": "Peter Harrity"
         },
         {
-          "locName": "Upstate Yard 8208 CR-20, Bainbridge US-NY 42.20498, -75.40111",
-          "obsDt": "2026-01-24 07:43",
-          "howMany": 8,
-          "lat": 42.204982,
-          "lng": -75.401113,
-          "subId": "S295971660",
-          "userDisplayName": "Jodi Brodsky"
-        },
-        {
           "locName": "2700 Centerline Road, Varysburg",
           "obsDt": "2026-01-24 07:43",
           "howMany": 9,
@@ -6505,6 +6596,15 @@
           "lng": -78.3020117,
           "subId": "S295948899",
           "userDisplayName": "Tom & Laura Somerville"
+        },
+        {
+          "locName": "Upstate Yard 8208 CR-20, Bainbridge US-NY 42.20498, -75.40111",
+          "obsDt": "2026-01-24 07:43",
+          "howMany": 8,
+          "lat": 42.204982,
+          "lng": -75.401113,
+          "subId": "S295971660",
+          "userDisplayName": "Jodi Brodsky"
         },
         {
           "locName": "Ed & Jackie's",
@@ -6678,6 +6778,15 @@
           "userDisplayName": "Austin Groff"
         },
         {
+          "locName": "8881 Boak Rd E, Holland Patent US-NY 43.24929, -75.30021",
+          "obsDt": "2026-01-21 08:00",
+          "howMany": 7,
+          "lat": 43.249291,
+          "lng": -75.300214,
+          "subId": "S296490042",
+          "userDisplayName": "wally ramsey"
+        },
+        {
           "locName": "11069 State Route 12 - yard around house",
           "obsDt": "2026-01-21 07:10",
           "howMany": 51,
@@ -6723,8 +6832,8 @@
           "userDisplayName": "Kyle Gage"
         }
       ],
-      "totalObservations": 41,
-      "rarityRank": 106,
+      "totalObservations": 42,
+      "rarityRank": 107,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Hesperiphona_vespertina_CT3.jpg/500px-Hesperiphona_vespertina_CT3.jpg"
     },
     {
@@ -6740,6 +6849,15 @@
           "lng": -73.9778996,
           "subId": "S296445365",
           "userDisplayName": "Peter Paul"
+        },
+        {
+          "locName": "Inwood Hill Park",
+          "obsDt": "2026-01-26 07:46",
+          "howMany": 7,
+          "lat": 40.8717025,
+          "lng": -73.9256904,
+          "subId": "S296493614",
+          "userDisplayName": "Birding Spouses"
         },
         {
           "locName": "Prospect Park--Prospect Lake",
@@ -7044,8 +7162,8 @@
           "howMany": 1,
           "lat": 40.7715482,
           "lng": -73.9724819,
-          "subId": "S295630718",
-          "userDisplayName": "Hailey Clancy"
+          "subId": "S295661127",
+          "userDisplayName": "Mary Beth Kooper"
         },
         {
           "locName": "Central Park",
@@ -7053,8 +7171,8 @@
           "howMany": 1,
           "lat": 40.7715482,
           "lng": -73.9724819,
-          "subId": "S295661127",
-          "userDisplayName": "Mary Beth Kooper"
+          "subId": "S295630718",
+          "userDisplayName": "Hailey Clancy"
         },
         {
           "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
@@ -7138,8 +7256,8 @@
           "userDisplayName": "Sadie B.C."
         }
       ],
-      "totalObservations": 45,
-      "rarityRank": 107,
+      "totalObservations": 46,
+      "rarityRank": 108,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Mergus_merganser_merganser_2078_%285561922560%29.jpg/500px-Mergus_merganser_merganser_2078_%285561922560%29.jpg"
     },
     {
@@ -7472,15 +7590,6 @@
           "userDisplayName": "Brad Miles"
         },
         {
-          "locName": "Central Park--Great Lawn",
-          "obsDt": "2026-01-23 10:23",
-          "howMany": 3,
-          "lat": 40.7814351,
-          "lng": -73.9665967,
-          "subId": "S295883250",
-          "userDisplayName": "Christina  Black"
-        },
-        {
           "locName": "Tung Ting Pond",
           "obsDt": "2026-01-23 10:23",
           "howMany": 1,
@@ -7488,6 +7597,15 @@
           "lng": -73.372245,
           "subId": "S295801271",
           "userDisplayName": "Richard Haimes"
+        },
+        {
+          "locName": "Central Park--Great Lawn",
+          "obsDt": "2026-01-23 10:23",
+          "howMany": 3,
+          "lat": 40.7814351,
+          "lng": -73.9665967,
+          "subId": "S295883250",
+          "userDisplayName": "Christina  Black"
         },
         {
           "locName": "Central Park",
@@ -7553,15 +7671,6 @@
           "userDisplayName": "Curtis Higgins"
         },
         {
-          "locName": "Central Park",
-          "obsDt": "2026-01-22 14:20",
-          "howMany": 3,
-          "lat": 40.7715482,
-          "lng": -73.9724819,
-          "subId": "S295699898",
-          "userDisplayName": "Christine Gu"
-        },
-        {
           "locName": "Central Park--Great Lawn",
           "obsDt": "2026-01-22 14:20",
           "howMany": 3,
@@ -7569,6 +7678,15 @@
           "lng": -73.9665967,
           "subId": "S295699899",
           "userDisplayName": "Zhi Zeng"
+        },
+        {
+          "locName": "Central Park",
+          "obsDt": "2026-01-22 14:20",
+          "howMany": 3,
+          "lat": 40.7715482,
+          "lng": -73.9724819,
+          "subId": "S295699898",
+          "userDisplayName": "Christine Gu"
         },
         {
           "locName": "Central Park--Great Lawn",
@@ -7625,15 +7743,6 @@
           "userDisplayName": "Noel Comess"
         },
         {
-          "locName": "Central Park--Great Lawn",
-          "obsDt": "2026-01-22 13:30",
-          "howMany": 3,
-          "lat": 40.7814351,
-          "lng": -73.9665967,
-          "subId": "S295736970",
-          "userDisplayName": "Karen Fung"
-        },
-        {
           "locName": "Central Park",
           "obsDt": "2026-01-22 13:30",
           "howMany": 3,
@@ -7641,6 +7750,15 @@
           "lng": -73.9724819,
           "subId": "S295698544",
           "userDisplayName": "Yuxuan Qin"
+        },
+        {
+          "locName": "Central Park--Great Lawn",
+          "obsDt": "2026-01-22 13:30",
+          "howMany": 3,
+          "lat": 40.7814351,
+          "lng": -73.9665967,
+          "subId": "S295736970",
+          "userDisplayName": "Karen Fung"
         },
         {
           "locName": "Central Park--Jacqueline Kennedy Onassis Reservoir",
@@ -7801,8 +7919,8 @@
           "howMany": 3,
           "lat": 40.7715482,
           "lng": -73.9724819,
-          "subId": "S295661127",
-          "userDisplayName": "Mary Beth Kooper"
+          "subId": "S295630718",
+          "userDisplayName": "Hailey Clancy"
         },
         {
           "locName": "Central Park",
@@ -7810,8 +7928,8 @@
           "howMany": 3,
           "lat": 40.7715482,
           "lng": -73.9724819,
-          "subId": "S295630718",
-          "userDisplayName": "Hailey Clancy"
+          "subId": "S295661127",
+          "userDisplayName": "Mary Beth Kooper"
         },
         {
           "locName": "Central Park--Great Lawn",
@@ -8130,7 +8248,7 @@
         }
       ],
       "totalObservations": 109,
-      "rarityRank": 108,
+      "rarityRank": 109,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/AleutianCanadaGoose2.jpg/413px-AleutianCanadaGoose2.jpg"
     }
   ]
